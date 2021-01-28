@@ -1,0 +1,41 @@
+@import 'typography';
+
+//------------------------------
+// Breakpoints
+//------------------------------
+$desktop-breakpoint: 1440px;
+$tablet-breakpoint: 768px;
+$mobile-breakpoint: 320px;
+
+//------------------------------
+// Fonts
+//------------------------------
+$poppins: 'Poppins', sans-serif;
+$mukta: 'Mukta', sans-serif;
+
+$heading-font: $poppins;
+$body-font: $mukta;
+
+//------------------------------
+// Sizing / Spacing
+//------------------------------
+$desktop-margin: 100px;
+
+
+//------------------------------
+// Color palette
+//------------------------------
+// Palette colors
+$green-1: #4AD150;
+$dark-green: #1E2624;
+
+// Text assignments
+$text-1: $dark-green;
+$text-2: $green-1;
+$links-color: $green-1;
+$links-color-hover: #c7ffca;
+
+// Fills
+$bg-fill-1: $green-1;
+$hr-fill: #E1E1E1;
+

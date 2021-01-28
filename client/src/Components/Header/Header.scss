@@ -1,0 +1,40 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.header {
+  background-color: $bg-fill-1;
+  height: 47px;
+  padding: 0 $desktop-margin;
+  @include flex(row nowrap, flex-end, center);
+
+  &__logo-link {
+    color: White;
+    font-family: $poppins;
+    font-weight: 600;
+    font-size: 1.7rem;
+    margin-right: auto;
+    text-decoration: none;
+
+    &-span {
+      color: $dark-green;
+    }
+  }
+
+  &__link {
+    color: White;
+    font-family: $mukta;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-decoration: none;
+
+    &--last-item {
+      margin-left: 55px;
+    }
+
+    &:hover {
+      color: $links-color-hover;
+    }
+  }
+
+}

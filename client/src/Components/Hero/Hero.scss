@@ -1,0 +1,18 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.hero {
+  background-color: grey;
+  height: 665px;
+
+  @include flex(row nowrap, center, center);	
+
+  &__container {
+    background-color: white;
+    width: 767px;
+
+
+  }
+
+}

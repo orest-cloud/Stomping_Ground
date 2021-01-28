@@ -1,0 +1,25 @@
+@import 'variables';
+
+@mixin tablet {
+    @media screen and (min-width: $tablet-breakpoint) {
+        @content;
+    }
+}
+  
+@mixin desktop {
+    @media screen and (min-width: $desktop-breakpoint) {
+        @content;
+    }
+}
+
+
+//------------------------------
+// Flex
+//------------------------------
+@mixin flex($flex-flow, $justify-content, $align-items) {
+	display: flex;
+	flex-flow: $flex-flow;
+	justify-content: $justify-content;
+	align-items: $align-items;
+}
+// @include flex(row, flex-end, stretch);
