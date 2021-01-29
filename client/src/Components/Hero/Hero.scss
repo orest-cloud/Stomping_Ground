@@ -3,16 +3,82 @@
 @import '../../Styles/Variables';
 
 .hero {
-  background-color: grey;
+  background-color: Gainsboro;
+  background-image: url('../../Assets/Images/hero_2.jpg');
+  background-position: cover;
   height: 665px;
 
   @include flex(row nowrap, center, center);	
 
   &__container {
-    background-color: white;
+    @include flex(column nowrap, flex-start, center);
     width: 767px;
+  }
 
+  &__heading {
+    color: White;
+    margin-bottom: 38px;
+    text-align: center;
 
+    &-span {
+      color: $text-2;
+    }
+  }
+
+  &__sub-heading {
+    color: White;
+    margin-bottom: 35px;
+    text-align: center;
+  }
+
+  &__inputs-container {
+    @include flex(row nowrap, center, center);
+    margin-bottom: 31px;
+    width: 100%;
+  }
+
+  &__input {
+    border-color: $border-color-1;
+    border-radius: 9px;
+    border-style: solid;
+    flex-grow: 1;
+    height: 60px;
+    padding: 0 10px;
+    
+
+    &::placeholder {
+      color: $placeholder-text-color;
+      @include font($mukta, 2.0rem, 400);
+    }
+  }
+
+  &__button {
+    @include font($poppins, 2.0rem, 500);
+    background-color: $bg-fill-1;
+    border-radius: 7px;
+    border-style: none;
+    color: White;
+    cursor: pointer;
+    height: 60px;
+    margin-left: 10px;
+    width: 80px;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+
+  &__list {
+    @include font($poppins, 2.0rem, 500);
+    color: White;
+    list-style: none;
+  }
+
+  &__list-item::before {
+    color: $green-1;
+    content: "\2022";
+    font-size: 2.0rem;
+    margin-right: 10px;
   }
 
 }

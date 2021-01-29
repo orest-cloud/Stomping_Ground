@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__container">
         <h1 className="hero__heading">Stomping<span className="hero__heading-span">Ground</span></h1>
-        <h3 className="hero__sub-heading">Get a feel for the neighborhood you're living in.</h3>
+        <h3 className="hero__sub-heading">Get a feel for the neighborhood you're thinking of living in.</h3>
 
         <div className="hero__inputs-container">
           <input type="text" className="hero__input" placeholder="Enter an address or intersection" />

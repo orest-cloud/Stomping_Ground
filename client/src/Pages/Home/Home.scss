@@ -1,0 +1,73 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.info {
+  @include flex(row nowrap, center, flex-start);
+  padding: 55px 0;
+
+  &__image {
+    max-width: 300px;
+  }
+
+  &__column {
+    width: 300px;
+    margin: 0 22px;
+  }
+
+  &__heading {
+    margin-bottom: 20px;
+  }
+
+  &__paragraph {
+    margin-bottom: 20px;
+  }
+}
+
+.samples {
+  background-color: $bg-fill-1;
+  
+  padding: 36px $desktop-margin 55px;
+
+  &__heading {
+    color: White;
+    margin-bottom: 17px;
+  }
+
+  &__sub-heading {
+    color: White;
+    margin-bottom: 36px;
+  }
+
+  &__places-container {
+    @include flex(row nowrap, space-between, center);
+  }
+
+  &__place {
+    width: 233px;
+  }
+
+  &__image {
+    margin-bottom: 5px;
+    max-width: 214px;
+  }
+
+  &__place-name {
+    color: White;
+    margin-bottom: 14px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__place-description {
+    color: White;
+  }
+
+
+
+  
+
+
+}
