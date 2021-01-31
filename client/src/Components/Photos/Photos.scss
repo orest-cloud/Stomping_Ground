@@ -1,0 +1,43 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.photos {
+  background-color: $bg-fill-2;
+  
+  &__heading {
+    color: White;
+    margin-bottom: 15px;
+  }
+
+  &__sub-heading {
+    color: $grey-1;
+    margin-bottom: 25px;
+  }
+
+  &--row-mode {
+    padding: 40px $desktop-margin 120px;
+  }
+
+  &--column-mode {
+    padding: 17px 22px 20px;
+  }
+}
+
+
+
+// Photos render in row mode
+.photos-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 40px 40px;
+}
+
+// Photos render in column mode
+.photos-column {
+  width: 445px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 40px;
+}

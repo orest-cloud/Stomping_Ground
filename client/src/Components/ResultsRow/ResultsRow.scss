@@ -1,0 +1,46 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.results-row {
+  @extend %light-curved-border;
+  @include flex(row nowrap, flex-start, center);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
+  padding: 10px 12px;
+  margin-bottom: 12px;
+
+  &__image {
+    max-width: 200px;
+    
+    &-link {
+      margin-right: 30px;
+    }
+  } 
+
+  &__link {
+    text-decoration: none;
+    &:hover {
+      color: $text-1;
+      text-decoration: underline;
+    }
+  }
+
+  &__place {
+    margin-bottom: 20px;
+  }
+
+  &__details {
+    color: $text-2;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &-link {
+      text-decoration: none;
+    }
+  }
+
+}

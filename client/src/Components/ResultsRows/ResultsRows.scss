@@ -1,0 +1,11 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.results-rows {
+
+  &__heading {
+    color: $text-1;
+    margin-bottom: 20px;
+  }
+}

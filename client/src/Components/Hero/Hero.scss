@@ -38,12 +38,11 @@
   }
 
   &__input {
-    border-color: $border-color-1;
-    border-radius: 9px;
-    border-style: solid;
+    @include font($mukta, 2.0rem, 400);
+    @extend %standard-curved-border;
     flex-grow: 1;
     height: 60px;
-    padding: 0 10px;
+    padding: 4px 0 0 10px;
     
 
     &::placeholder {

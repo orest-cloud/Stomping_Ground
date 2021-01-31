@@ -20,17 +20,17 @@
   }
 
   &__paragraph {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
 .samples {
-  background-color: $bg-fill-1;
+  background-color: $bg-fill-2;
   
   padding: 36px $desktop-margin 55px;
 
   &__heading {
-    color: White;
+    color: $text-2;
     margin-bottom: 17px;
   }
 
@@ -52,8 +52,13 @@
     max-width: 214px;
   }
 
+  &__link {
+    text-decoration: none;
+  }
+
   &__place-name {
     color: White;
+    font-size: 1.7rem;
     margin-bottom: 14px;
 
     &:hover {
@@ -62,7 +67,7 @@
   }
 
   &__place-description {
-    color: White;
+    color: $grey-1;
   }
 
 

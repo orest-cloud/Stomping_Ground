@@ -1,0 +1,14 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+
+.results {
+
+  padding: 40px $desktop-margin 30px;
+
+  &__visuals-container {
+    @include flex(row nowrap, flex-start, flex-start);
+    margin-bottom: 30px;
+  } 
+}

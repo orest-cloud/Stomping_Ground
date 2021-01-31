@@ -1,0 +1,20 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.property-info {
+  margin-right: 145px;
+  width: 372px;
+
+  &__image {
+    margin-bottom: 15px;
+  }
+
+  &__label {
+    font-size: 1.8rem;
+  }
+
+  &__data {
+    margin-bottom: 10px;
+  }
+}

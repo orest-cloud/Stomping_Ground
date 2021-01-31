@@ -1,0 +1,11 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.map {
+  
+  &__map {
+    max-height: 448px;
+  }
+
+}

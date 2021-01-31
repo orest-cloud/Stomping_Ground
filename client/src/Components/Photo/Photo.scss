@@ -1,0 +1,9 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.photo-image {
+  &__image {
+    max-width: 214px;
+  }
+}
