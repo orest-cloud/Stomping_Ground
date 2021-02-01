@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 import './Hero.scss';
 
@@ -8,19 +9,39 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__container">
         <h1 className="hero__heading">Stomping<span className="hero__heading-span">Ground</span></h1>
-        <h3 className="hero__sub-heading">Get a feel for the neighborhood you're thinking of living in.</h3>
+        <h3 className="hero__sub-heading">Get a feel for the Toronto neighborhood you're thinking of living in.</h3>
 
-        <div className="hero__inputs-container">
-          <input type="text" className="hero__input" placeholder="Enter an address or intersection" />
-          <button className="hero__button">GO!</button>
-        </div>
 
         <ul className="hero__list">
           <li className="hero__list-item">Live MLS listings</li>
-          <li className="hero__list-item">WalkScore</li>
+          <li className="hero__list-item">WalkScore&reg;</li>
           <li className="hero__list-item">Neighborhood Photos</li>
         </ul>
 
+        
+        <h2 className="hero__call-to-action">Choose an area to begin</h2>
+
+        <div className="hero__links-list-container">
+          <ul className="hero__links-list">
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Runnymede</Link></li>
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Lawrence Park</Link></li>
+          </ul>
+
+          <ul className="hero__links-list">
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Leslieville</Link></li>
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Parkdale</Link></li>
+          </ul>
+
+          <ul className="hero__links-list">
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Rosedale</Link></li>
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Swansea</Link></li>
+          </ul>
+
+          <ul className="hero__links-list">
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Willowdale</Link></li>
+            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">York University Heights</Link></li>
+          </ul>
+        </div>
 
       </div>
     </section>

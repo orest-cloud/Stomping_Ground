@@ -40,7 +40,7 @@
   }
 
   &__places-container {
-    @include flex(row nowrap, space-between, center);
+    @include flex(row nowrap, space-between, flex-start);
   }
 
   &__place {

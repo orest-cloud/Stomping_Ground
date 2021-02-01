@@ -73,11 +73,37 @@ h1 {
     line-height: 32px;
 }
 
-h1, h2, h3, h4, hr, ul, li, img, p {
+h1, h2, h3, h4, hr, ul, li, img, p, label, input {
     margin: 0;
     padding: 0;
 }
 
 a {
     color: $links-color;
+}
+
+//------------------------------
+// Site-wide elements
+//------------------------------
+
+button {
+    @include font($poppins, 2.0rem, 500);
+    background-color: $bg-fill-1;
+    border-radius: 7px;
+    border-style: none;
+    color: White;
+    cursor: pointer;
+    height: 60px;  
+
+    &:hover {
+        background-color: $button-hover;
+      }    
+}
+
+label {
+    @include font($body-font, 2.0rem, 600);
+    display: block;
+    margin-bottom: 0;
+    text-align: left;
+    width: 100%;
 }

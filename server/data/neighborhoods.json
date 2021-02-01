@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Runnymede-Bloor West Village",
+    "id": "f2f2553a-dabb-43aa-94bc-73d5cf4a3fe1",
+    "location": {
+      "address": "591 Annette Street",
+      "city": "Toronto",
+      "postalcode": "M6S 2C3",
+      "country": "Canada"
+    },
+    "scores": {
+      "walk": 81,
+      "walkheading": "Very Walkable",
+      "walksubheading": "Most errands can be accomplished on foot.",
+      "transit": 80,
+      "transitheading": "Excellent Transit",
+      "transitsubheading": "Transit is convenient for most trips.",
+      "bike": 78,
+      "bikeheading": "Very Bikeable",
+      "bikesubheading": "Flat as a pancake, good bike lanes."
+    },
+    "commute": {
+      "destination": "Downtown Toronto",
+      "car": 25,
+      "bus": 38,
+      "bike": 36,
+      "walk": 60,
+      "neareststop": "593 Annette Street is a 14 minute walk from the 2 LINE 2 (BLOOR - DANFORTH) at the RUNNYMEDE STATION - EASTBOUND PLATFORM stop.",
+      "nearbyparks": "Beresford Park, Beresford Park and Malta Park."
+    }
+  }
+]

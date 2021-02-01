@@ -27,57 +27,70 @@
 
   &__sub-heading {
     color: White;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     text-align: center;
   }
-
-  &__inputs-container {
-    @include flex(row nowrap, center, center);
-    margin-bottom: 31px;
-    width: 100%;
-  }
-
-  &__input {
-    @include font($mukta, 2.0rem, 400);
-    @extend %standard-curved-border;
-    flex-grow: 1;
-    height: 60px;
-    padding: 4px 0 0 10px;
-    
-
-    &::placeholder {
-      color: $placeholder-text-color;
-      @include font($mukta, 2.0rem, 400);
-    }
-  }
-
-  &__button {
-    @include font($poppins, 2.0rem, 500);
-    background-color: $bg-fill-1;
-    border-radius: 7px;
-    border-style: none;
+  
+  &__call-to-action {
     color: White;
-    cursor: pointer;
-    height: 60px;
-    margin-left: 10px;
-    width: 80px;
-
-    &:hover {
-      background-color: $button-hover;
-    }
+    margin-bottom: 25px;
+    
   }
 
   &__list {
-    @include font($poppins, 2.0rem, 500);
+    @include font($poppins, 1.7rem, 500);
     color: White;
     list-style: none;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__list-item {
+    display: inline;
+    margin-left: 13px;
   }
 
   &__list-item::before {
     color: $green-1;
     content: "\2022";
     font-size: 2.0rem;
-    margin-right: 10px;
+    margin-right: 1px;
   }
+
+  &__links-list-container {
+    @include flex(row nowrap, space-between, flex-start);	
+  }
+
+  &__links-list {
+    list-style: none;
+    margin: 0 20px;
+    // width: 207px;
+
+    &-item {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__links-list-item-link {
+    @include font($heading-font, 1.7rem, 500);
+    background-color: $bg-fill-1;
+    border-radius: 3px;
+    color: White;
+    padding: 1px 3px;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $button-hover;
+    }
+  }
+
+  // &__inputs-container {
+  //   @include flex(row nowrap, center, center);
+  //   margin-bottom: 31px;
+  //   width: 100%;
+  // }
+
+
 
 }

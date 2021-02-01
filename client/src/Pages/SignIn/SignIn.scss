@@ -1,0 +1,51 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+
+.signin {
+  @include flex(column nowrap, flex-start, center);
+  padding: 40px $desktop-margin 30px;
+
+  &__icon {
+    margin-bottom: 10px;
+    width: 50px
+  }
+
+  &__heading {
+    color: $text-1;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__form {
+    @include flex(column nowrap, flex-start, flex-end);
+    margin-bottom: 50px;
+    width: 437px;
+  }
+
+  &__input {
+    @extend %standard-curved-border;
+    @extend %account-inputs;
+    
+    &--last {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__button {
+    width: 142px;
+  }
+
+  &__paragraph {
+    text-align: center;
+  }
+
+  &__link {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

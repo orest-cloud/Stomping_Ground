@@ -1,11 +1,21 @@
 @import 'variables';
 
+
+%account-inputs {
+  @include font($mukta, 1.7rem, 400);
+  height: 44px;
+  margin-bottom: 10px;
+  padding: 0 0 0 10px;
+  width: 100%;
+}
+
+// Horizontal rule
 %hr {
   border-top: 1px solid $hr-fill;
 }
 
 %standard-curved-border {
-  border-color: $border-color-1;
+  border-color: $border-color-2;
   border-radius: 9px;
   border-style: solid;
 }
