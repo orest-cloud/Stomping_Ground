@@ -4,9 +4,9 @@
 
 .results-row {
   @extend %light-curved-border;
-  @include flex(row nowrap, flex-start, center);
+  @include flex(row nowrap, space-between, center);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
-  padding: 10px 12px;
+  padding: 10px 50px 10px 12px;
   margin-bottom: 12px;
 
   &__image {
@@ -17,16 +17,30 @@
     }
   } 
 
+  &__data-container {
+    margin-right: auto;
+  }
+
   &__link {
     text-decoration: none;
+
     &:hover {
-      color: $text-1;
+      // color: $text-2;
       text-decoration: underline;
     }
   }
 
-  &__place {
-    margin-bottom: 20px;
+  &__address {
+    color: $text-2;
+    margin-bottom: 10px;
+  }
+
+  &__paragraph {
+    margin-bottom: 5px;
+
+    &-span {
+      margin-right: 20px;
+    }
   }
 
   &__details {

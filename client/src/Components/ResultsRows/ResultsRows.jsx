@@ -14,7 +14,7 @@ export default function ResultsRows(props) {
       <h2 className="results-rows__heading">Properties for sale in this neighborhood</h2>
 
       {resultsData.map(data => {
-        return (<ResultsRow key={data.id} id={data.id} address={data.address} city={data.city} province={data.province} />)
+        return (<ResultsRow key={data.Id} data={data} />)
       })}	      
 
     </section>

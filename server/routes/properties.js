@@ -11,6 +11,22 @@ router
     return res.send(properties);
     })
 	
+router
+.get('/:id', (req, res) => {
+	// Package to return
+	// responsePackage = [];
+	
+	// Gets neighborhood info
+    let propertyID = properties.find((property)=> property.Id == req.params.id);
+	// responsePackage.push(hoodID);
+	
+	// Gets listings
+	//let listings = properties.filter((property)=> property.neighborhood == req.params.id);
+	//responsePackage.push(listings);
+	
+    // return res.send(responsePackage);
+	return res.send(propertyID);
+    })	
 	
 	
 	

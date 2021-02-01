@@ -34,9 +34,8 @@ export default function Home() {
 
       <div className="info__column">
         <h2 className="info__heading">What's a WalkScore&reg;?</h2>
-        <p className="info__paragraph">Get information on WalkScore in your desired neighborhood!</p>
-        <p className="info__paragraph">Franzen cred fam af irony gastropub. Tacos cold-pressed shoreditch PBR&B, VHS food truck paleo letterpress. Small batch salvia cornhole 90's gluten-free, adaptogen</p>
-        <p className="info__paragraph">Waistcoat asymmetrical bicycle rights twee aesthetic fam typewriter. Fam pinterest tousled salvia shabby chic fixie coloring book single-origin coffee</p>
+        <p className="info__paragraph">A neighbourhood’s WalkScore&reg; is a numerical index rating the “walkability” of an area—how pedestrian-friendly it is.</p>
+        <p className="info__paragraph">The WalkScore&reg; data estimates how many errands you can run on foot in a given neighbourhood, and it also indexes the availability of public transit and the amount of bike lanes and hills for cyclists.</p>
       </div>
     </section>
 
@@ -47,26 +46,26 @@ export default function Home() {
       <div className="samples__places-container">
 
       <div className="samples__place">
-          <Link className="samples__image-link" to="/results"><img src={sample1} alt="A nice neighborhood" className="samples__image"/></Link>
-          <Link className="samples__link" to="/results"><h3 className="samples__place-name">Bloor West Village</h3></Link>
+          <Link className="samples__image-link" to="/results/f2f2553a"><img src={sample1} alt="A nice neighborhood" className="samples__image"/></Link>
+          <Link className="samples__link" to="/results/f2f2553a"><h3 className="samples__place-name">Bloor West Village</h3></Link>
           <p className="samples__place-description">Bloor West Village is a shopping district in Toronto, Ontario, Canada. Located along Bloor Street, it encompasses all businesses along Bloor Street between South Kingsway and Ellis Park Road, consisting of more than 400 shops, restaurants and services.</p>
         </div>
 
         <div className="samples__place">
-          <Link className="samples__image-link" to="/results"><img src={sample2} alt="A nice neighborhood" className="samples__image"/></Link>
-          <Link className="samples__link" to="/results"><h3 className="samples__place-name">The Junction</h3></Link>
+          <Link className="samples__image-link" to="/results/f2f2553a"><img src={sample2} alt="A nice neighborhood" className="samples__image"/></Link>
+          <Link className="samples__link" to="/results/f2f2553a"><h3 className="samples__place-name">The Junction</h3></Link>
           <p className="samples__place-description">The Junction is a neighbourhood in Toronto, Ontario, Canada, that is near the West Toronto Diamond, a junction of four railway lines in the area.</p>
         </div>
 
         <div className="samples__place">
-          <Link className="samples__image-link" to="/results"><img src={sample3} alt="A nice neighborhood" className="samples__image"/></Link>
-          <Link className="samples__link" to="/results"><h3 className="samples__place-name">Swansea</h3></Link>
+          <Link className="samples__image-link" to="/results/f2f2553a"><img src={sample3} alt="A nice neighborhood" className="samples__image"/></Link>
+          <Link className="samples__link" to="/results/f2f2553a"><h3 className="samples__place-name">Swansea</h3></Link>
           <p className="samples__place-description">Swansea is a neighbourhood in the city of Toronto, Ontario, Canada, bounded on the west by the Humber River, on the north by Bloor Street, on the east by High Park and on the south by Lake Ontario.</p>
         </div>
 
         <div className="samples__place">
-          <Link className="samples__image-link" to="/results"><img src={sample4} alt="A nice neighborhood" className="samples__image"/></Link>
-          <Link className="samples__link" to="/results"><h3 className="samples__place-name">Roncesvalles</h3></Link>
+          <Link className="samples__image-link" to="/results/f2f2553a"><img src={sample4} alt="A nice neighborhood" className="samples__image"/></Link>
+          <Link className="samples__link" to="/results/f2f2553a"><h3 className="samples__place-name">Roncesvalles</h3></Link>
           <p className="samples__place-description">Roncesvalles is a neighbourhood in the city of Toronto, Ontario, Canada centred on Roncesvalles Avenue, a north-south street leading from the intersection of King and Queen Streets to the south, north to Dundas Street West, a distance of roughly 1.5 kilometres.</p>
         </div>
 

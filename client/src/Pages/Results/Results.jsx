@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Axios from 'axios';
 // import { Link } from 'react-router-dom';
 
 // Components import
@@ -15,55 +16,70 @@ import Photos from '../../Components/Photos/Photos'
 // Styles import
 import './Results.scss';
 
-export default function Results() {
-  document.title = "Search Results | StompingGround";
+export default class Results extends Component {
 
-  const placeheading = {
-   streetname: "593 Annette St.",
-   subheading: "In the neighborhood of Bloor West"
-  };
+  // API calls setup
+  apiURL = 'http://localhost:8080/place/';
+  currentAreaID = this.props.match.params.id;
 
-  const resultsData = [
-    {
-      id: 1,
-      address: "555 Jettison Avenue",
-      city: "Toronto",
-      province: "Ontario"
-    },
-    {
-      id: 2,
-      address: "555 Jettison Avenue",
-      city: "Toronto",
-      province: "Ontario"
-    },
-    {
-      id: 3,
-      address: "555 Jettison Avenue",
-      city: "Toronto",
-      province: "Ontario"
-    }     
-  ];
+  state = {
+    neighborhoodData: null,
+    propertiesData: null,
+    photosData: null
+  }
 
+  componentDidMount() {
+    this.apiFetchCall(this.currentAreaID);
+  }
 
-  return (
-    <>
-    <Header />
+  apiFetchCall = (currentAreaID) => {
+    Axios
+        .get(`${this.apiURL}${currentAreaID}`)
+        .then((res) => {
+          console.log('%c Results Axios response:', "color: red; font-weight: bold;");
+          console.log(res);
 
-    <main className="results">
+            this.setState({
+              neighborhoodData: res.data[0],
+              propertiesData: res.data[1],
+              photosData: res.data[2]
+            });
+        })
+        .catch((err) => console.log(err));
+  }      
 
-      <PlaceHeading heading={placeheading.streetname} subheading={placeheading.subheading} hood={placeheading.hood} />
+  render() {
+    document.title = "Results | StompingGround";
 
-      <div className="results__visuals-container">
-        <WalkScore />
-        <Map />
-      </div>
+    // Returns a blank area until Axios data for the state is loaded
+    if (!this.state.neighborhoodData) {
+      return (
+        <Header />
+        )
+      } else {
+      document.title = `${this.state.neighborhoodData.name} | StompingGround`;
+    }
 
-      <ResultsRows data={resultsData} />
-
-    </main>
-
-    <Photos mode="row" />
-
-    </>
-  )
+    return (
+      <>
+      <Header />
+  
+      <main className="results">
+  
+        <PlaceHeading heading={this.state.neighborhoodData.name} subheading={this.state.neighborhoodData.location.postalcode} />
+  
+        <div className="results__visuals-container">
+          <WalkScore/>
+          <Map mode="centre" latitude={this.state.neighborhoodData.location.latitude}  longitude={this.state.neighborhoodData.location.longitude} />
+        </div>
+  
+        <ResultsRows data={this.state.propertiesData} />
+  
+      </main>
+  
+      <Photos mode="row" />
+  
+      </>
+    )
+  }
 }    

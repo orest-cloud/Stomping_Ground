@@ -1,6 +1,7 @@
 [
   {
-    "neighborhood": "Runnymede-Bloor West Village",
+    "neighborhood": "f2f2553a",
+	"neighborhoodname": "Runnymede",
     "Id":"22727317",
     "PublicRemarks":"Great Opportunity To Own An Affordable Piece Of Residential Property In The Prestigious Runnymede/Bloor West Village. This Incredibly Unique Property Could Have The Potential For New Home Construction Of Up To 2,000 Square Feet. With 50 Feet Frontage Onto The Laneway, It's Twice As Wide As Traditional Lots In The Area. The Property Is Being Sold In As-Is, Where Is Condition. (27813072)",
     "Building":{
@@ -14,17 +15,18 @@
     },
     "Property": {
       "Price":"$850,000",
-      "AddressText":"627A DURIE ST|Toronto, Ontario M6S3H2",
+      "AddressText":"627A Durie St, Toronto, Ontario M6S3H2",
       "Longitude":"-79.4833213",
       "Latitude":"43.6620963",
       "SizeTotal":"50 x 44 FT",
       "image": "https://cdn.realtor.ca/listings/TS637464804836800000/reb82/highres/5/w5085755_1.jpg",
-      "parking": "Detached Garage"
+      "parking": "Driveway"
     }
   },
 
   {
-    "neighborhood": "Runnymede-Bloor West Village",
+    "neighborhood": "f2f2553a",
+	"neighborhoodname": "Runnymede",
     "Id":"22758553",
     "PublicRemarks":"Rare Bwv Home Will Have You Swooning! Stately, Heritage & Move-In Ready. Meticulously Maintained W Charm Around Every Corner, Flawless Original Woodwork & Stained Glass + Updated Mechanics To Match! Functional & Lrg Living Rm W Woodburning Firplce. Dinner Party Sized Dining Room W Pocket French Doors. Bright Lrg Eat-In Kitchen W/ Wlkout To Huge Deck & West Facing Yard. 4 Large Bedrooms, Finished Bsmt W/ 7 Foot Ceiling Height, Updated Bath & Storage!**** EXTRAS **** Premium Lot & Legal Front Parking Pad. Looking For Bonus Space? Large Yrd W Modern Dbl Garage Perfect Conversion To A Home Office Or Gym! Impeccably Maintnd & Structurally Sound. Highly Sought After School District Runnymede & Humberside Ci (27854336)",
     "Building":{
@@ -38,7 +40,7 @@
     },
     "Property": {
       "Price":"$1,599,000",
-      "AddressText":"316 WILLARD AVE|Toronto, Ontario M6S3R2",
+      "AddressText":"316 Willard Ave, Toronto, Ontario M6S3R2",
       "Longitude":"-79.4828827",
       "Latitude":"43.6521059",
       "SizeTotal":"25 x 132.67 FT",
@@ -48,7 +50,8 @@
   },
 
   {
-    "neighborhood": "Runnymede-Bloor West Village",
+    "neighborhood": "f2f2553a",
+	"neighborhoodname": "Runnymede",
     "Id":"27619564",
     "PublicRemarks":"Live In This Beautiful Completely Renovated 4 Bdrm Family Home In The Heart Of Bloor West Village! This Stunning Home Features A Spacious Living & Formal Dining Room With A Large Eat-In Kitchen Overlooking The Mature Private Garden. Bright Modern Kitchen Opens To A Lovely Sun Porch And Sunny Private Garden! 3 Car Detached Garage Is A Bonus!**** EXTRAS **** Few Steps To Bloor & Entertainment. This 4 Bdrm, 2 Bathroom Home Is Ideal For Family Living. Wide Mutual Driveway With Triple Car Garage! All Brand New Appliances S/S Fridge, Stove, M/W,Washer& Dryer In The Bsmt. (27619564)",
     "Building":{
@@ -62,7 +65,7 @@
     },
     "Property": {
       "Price":"$1,850,000",
-      "AddressText":"338 BERESFORD AVE, Toronto, Ontario M6S3B3",
+      "AddressText":"338 Beresford Ave, Toronto, Ontario M6S3B3",
       "Longitude":"-79.478895",
       "Latitude":"43.653848",
       "SizeTotal":"25 x 132.67 FT",

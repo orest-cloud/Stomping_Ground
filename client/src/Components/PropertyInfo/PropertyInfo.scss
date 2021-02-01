@@ -3,11 +3,22 @@
 @import '../../Styles/Variables';
 
 .property-info {
-  margin-right: 145px;
-  width: 372px;
-
+  @include flex(column nowrap, flex-start, flex-start);
+  margin-right: 67px;
+  width: 450px;
+  
   &__image {
     margin-bottom: 15px;
+  }
+  
+  &__data-container {
+    @include flex(row nowrap, space-between, flex-start);
+    margin-bottom: 15px;
+    width: 100%;
+  }
+
+  &__data-column {
+    width: 50%;
   }
 
   &__label {
@@ -16,5 +27,9 @@
 
   &__data {
     margin-bottom: 10px;
+  }
+
+  &__remarks {
+    width: 100%;
   }
 }

@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Axios from 'axios';
 // import { Link } from 'react-router-dom';
 
 // Components import
@@ -15,40 +16,72 @@ import PropertyInfo from '../../Components/PropertyInfo/PropertyInfo'
 // Styles import
 import './Details.scss';
 
-export default function Details() {
-  document.title = "Details | StompingGround";
 
-  const propertyData = 
-    {
-      id: 1183,
-      address: "555 Jettison Avenue",
-      city: "Toronto",
-      province: "Ontario",
-      image: "https://i.imgur.com/bRYsNY9.jpg"
-    };
+export default class Details extends Component {
 
-  return (
-    <>
-    <Header />
+  // API calls setup
+  apiURL = 'http://localhost:8080/property/';
+  currentID = this.props.match.params.id;
 
-    <main className="details">
+  state = {
+    mapData: null,
+    neighborhoodData: null,
+    photosData: null,
+    propertiesData: null
+  }
 
-      <PlaceHeading heading={propertyData.address} subheading={`${propertyData.city}, ${propertyData.province}`} />
+  componentDidMount() {
+    this.apiFetchCall(this.currentID);
+  }
 
-      <div className="details__property-info-container">
-        <PropertyInfo data={propertyData} />
-        <Map />
-      </div>
+  apiFetchCall = (currentID) => {
+    Axios
+        .get(`${this.apiURL}${currentID}`)
+        .then((res) => {
+          console.log('%c Axios response:', "color: red; font-weight: bold;");
+          console.log(res);
 
-      <div className="details__hr"></div>
+            this.setState({
+              propertiesData: res.data
+            });
+        })
+        .catch((err) => console.log(err));
+  }   
 
-      <div className="details__visuals-container">
-        <WalkScore />
-        <Photos mode="column" />
-      </div>
 
-    </main>
+  render() {
+    document.title = "Details | StompingGround";
 
-    </>
-  )
+    // Returns a blank area until Axios data for the state is loaded
+    if (!this.state.propertiesData) {
+      return (
+        <Header />
+      )
+    }    
+
+    return (
+      <>
+      <Header />
+
+      <main className="details">
+
+        <PlaceHeading heading={this.state.propertiesData.Property.AddressText} subheading={`In the neighborhood of ${this.state.propertiesData.neighborhoodname}`} />
+
+        <div className="details__property-info-container">
+          <PropertyInfo data={this.state.propertiesData} />
+          <Map mode="pin" query={this.state.propertiesData.Property.AddressText}  />
+        </div>
+
+        <div className="details__hr"></div>
+
+        <div className="details__visuals-container">
+          <WalkScore />
+          <Photos mode="column" />
+        </div>
+
+      </main>
+
+      </>
+    )
+  }
 }    

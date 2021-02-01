@@ -23,23 +23,23 @@ export default function Hero() {
 
         <div className="hero__links-list-container">
           <ul className="hero__links-list">
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Runnymede</Link></li>
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Lawrence Park</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Runnymede</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Lawrence Park</Link></li>
           </ul>
 
           <ul className="hero__links-list">
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Leslieville</Link></li>
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Parkdale</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Leslieville</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Parkdale</Link></li>
           </ul>
 
           <ul className="hero__links-list">
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Rosedale</Link></li>
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Swansea</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Rosedale</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Swansea</Link></li>
           </ul>
 
           <ul className="hero__links-list">
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">Willowdale</Link></li>
-            <li className="hero__links-list-item"><Link to="/f2f2553a" className="hero__links-list-item-link">York University Heights</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Willowdale</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">York University Heights</Link></li>
           </ul>
         </div>
 

@@ -1,12 +1,14 @@
 [
   {
-    "name": "Runnymede-Bloor West Village",
-    "id": "f2f2553a-dabb-43aa-94bc-73d5cf4a3fe1",
+    "name": "Runnymede",
+    "id": "f2f2553a",
     "location": {
-      "address": "591 Annette Street",
+      "address": "591 Annette Street, Toronto",
       "city": "Toronto",
       "postalcode": "M6S 2C3",
-      "country": "Canada"
+      "country": "Canada",
+	  "latitude": 43.6593,
+	  "longitude": -79.4838
     },
     "scores": {
       "walk": 81,
