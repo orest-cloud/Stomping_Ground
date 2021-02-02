@@ -72,6 +72,246 @@
       "image": "https://cdn.realtor.ca/listing/TS637428933417530000/reb82/highres/9/w4999229_1.jpg",
       "parking": "Detached Garage"
     }
+  },
+  {
+    "neighborhood": "",
+	"neighborhoodname": "",
+    "Id":"",
+    "PublicRemarks":"",
+    "Building":{
+      "BathroomTotal":"",
+      "Bedrooms":"",
+      "Type":""
+    },
+    "Contact": {
+      "Name":"",
+      "PhoneNumber":"416-"
+    },
+    "Property": {
+      "Price":"$",
+      "AddressText":"",
+      "Longitude":"",
+      "Latitude":"",
+      "SizeTotal":"",
+      "image": "",
+      "parking": ""
+    }
+  },
+  {
+    "neighborhood": "5467678567867878",
+	"neighborhoodname": "Lawrence Park",
+    "Id":"C5093030",
+    "PublicRemarks":"Superior Quality Lawrence Park Family Home - No Detail Overlooked * Richard Wengle Design Built By Sherwood Homes 2010 & Many Upgrades Since * Transitional Finishes Thruout Approx 4,600 Sf + Lower Level * Smart Home Automation - Lighting, Audio,Tvs * Servery & Walk-In Pantry Off Kitchen * Exceptional Walk Up Lower Level W/ Wine Cellar, Rec Room, Exercise Rm, Nanny's Suite * Heated Drive & Front Walkway * Walk To Toronto French School, Sunnybrook Hospital ***** EXTRAS **** Subzero (Full Fridge & Freezer),48' Viking Gas Range W/6 Burners & Grill, Miele D/W, S/S Micro, 2 Washer & Dryer Sets, Heated Floors, Extensive Custom Built-Ins, Wine Cellar, All Elfs, 2 Cac, 2 Fag. See Schedule B For Full List. (27843737)",
+    "Building":{
+      "BathroomTotal":"6",
+      "Bedrooms":"4",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Morgan Hall",
+      "PhoneNumber":"416-489-2121"
+    },
+    "Property": {
+      "Price":"$5,650,000",
+      "AddressText":"129 Rochester Ave, Toronto, Ontario M4N1N9",
+      "Longitude":"-79.386950",
+      "Latitude":"43.725010",
+      "SizeTotal":"50 x 150 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637471810071600000/reb82/highres/0/c5093030_1.jpg",
+      "parking": "Garage"
+    }
+  },
+  {
+    "neighborhood": "5467678567867878",
+	"neighborhoodname": "Lawrence Park",
+    "Id":"C5099606",
+    "PublicRemarks":"Quality Lawrence Park Family Home Built 2012 * Stunning Transitional Finishes With A Modern Flair * Loaded With Upgrades, Fabulous Open Concept Layout, High Ceilings Thruout * Gourmet Eat-In Kitchen With Separate Servery Plus Walk-In Pantry * Family Room Walks Out To Private Landscaped Yard * Luxurious Master With Spa Like Ensuite * L/L Cont: Wine Cellar,3 Large Storage Areas, Extensive Custom Built-Ins * Walk To Toronto French School, Sunnybrook Hospital ***** EXTRAS **** 2 Liebherr Fridge/Freezers, Aeg B/I Oven & Warming Drawer, Gas Cooktop, B/I D/W, Panasonic Micro, B/I Wine Fridge, Basement Freezer, Lg Washer & Dryer, 3 Tvs, All Elf, All Window Treatments, Garage Storage System. See Schedule B (27871137)",
+    "Building":{
+      "BathroomTotal":"5",
+      "Bedrooms":"4",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Morgan Hall",
+      "PhoneNumber":"416-489-2121"
+    },
+    "Property": {
+      "Price":"$3,695,000",
+      "AddressText":"5 Pembury Ave, Toronto, Ontario M4N3K4",
+      "Longitude":"-79.381040",
+      "Latitude":"43.725700",
+      "SizeTotal":"42 x 143.9 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637477847364200000/reb82/highres/6/c5099606_1.jpg",
+      "parking": "Garage"
+    }
+  },
+  {
+    "neighborhood": "5467678567867878",
+	"neighborhoodname": "Lawrence Park",
+    "Id":"C5085382",
+    "PublicRemarks":"Land! Land! Land! Outstanding Opportunity To Build Your Dream Home In The Heart Of Lawrence Park * Rare South 50 By 150 Ft Lot Surrounded By Multi-Million Dollar Homes * Steps To Toronto French School, Sunnybrook Hospital, And Public Transit * House Is In As Is Condition ***** EXTRAS **** All Existing Appliances And Systems In 'As Is' Condition. (27811228)",
+    "Building":{
+      "BathroomTotal":"4",
+      "Bedrooms":"3",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Carole Hall",
+      "PhoneNumber":"416-489-2121"
+    },
+    "Property": {
+      "Price":"$3,395,000",
+      "AddressText":"275 St Leonard's Ave, Toronto, Ontario M4N1K9",
+      "Longitude":"-79.381950",
+      "Latitude":"43.724970",
+      "SizeTotal":"50 x 150 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637463176012770000/reb82/highres/2/c5085382_1.jpg",
+      "parking": "Detached Garage"
+    }
+  },
+  {
+    "neighborhood": "5467678567867878",
+	"neighborhoodname": "Lawrence Park",
+    "Id":"C5087380",
+    "PublicRemarks":"Sensational Family Home On Demand Street In Prime Lawrence Park! Bright Spacious Principal Rooms, Large Renovated Kitchen W/ Centre Island, Family Room W/ Walk-Out To Beautiful Patio & Salt Water Pool! All Bathrooms Renovated With High Materials. Large Sun-Drenched Bedrooms & Traditional 2nd Flr Library! Bonus 3rd Floor, Including A Full Bath & Renovated Lower Level. Ample Storage & Parking. Fabulous 60 X 137 Ft Lot-Close To Schools, Transit, And Sunnybrook!**** EXTRAS **** Many Recent Upgrades, New Baths, Flooring, Freshly Painted, Windows, Appliance, Roof And Salt Water Pool. See Feature Sheet For A List Up Updated And Inclusions. One Of A Kind Transitional Home On A Spectacular Lot. (27818694)",
+    "Building":{
+      "BathroomTotal":"5",
+      "Bedrooms":"5",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Kelly Lee Fulton",
+      "PhoneNumber":"416-489-2121"
+    },
+    "Property": {
+      "Price":"$4,845,000",
+      "AddressText":"93 Glengowan Rd, Toronto, Ontario M4N1G5",
+      "Longitude":"-79.390260",
+      "Latitude":"43.721080",
+      "SizeTotal":"60 x 136.61 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637474186786830000/reb82/highres/0/c5087380_1.jpg",
+      "parking": "Detached Garage"
+    }
+  },
+  {
+    "neighborhood": "5467678567867878",
+	  "neighborhoodname": "Lawrence Park",
+    "Id":"C5093218",
+    "PublicRemarks":"On A Prestigious & Coveted Pocket Of Lawrence Park This Timeless Masterpiece Sits On A Pool Size Lot. Offers Sophistication & Elegance, Luxurious Finishes Thru-Out. Stylish Lr Boasts 21 Ft Cathedral Ceiling 10 Ft Thru-Out Main Flr. A Chef's Dream Kit. Awaits W/Ctr Island & Brkf Bar. O/L's Fmly Rm W/Double Sided Fireplace. Enjoy Dining By The Fire In Your Stately Din Rm, Refinement At Its Best. Feel The Tranquility Your Sunroom, Offers Views Of Lush Garden.**** EXTRAS **** Large Deck W/Hot Tub, Sep Ent,Walkup,New Broadlm,Newly Painted Interior,Sauna,Steam Rm,Nanny's Quarters/Potential Inlaw Suite.Gym,Rec Rm,Reno'd Garage Tesla/Electric Vech.Charging Station,New Gar Dr,New Washer/Dryer,New Vinyl Flr In Bsmt. (27843975)",
+    "Building":{
+      "BathroomTotal":"5",
+      "Bedrooms":"5",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Sam Valentini",
+      "PhoneNumber":"416-743-2000"
+    },
+    "Property": {
+      "Price":"$,488,000",
+      "AddressText":"40 Blyth Hill Rd, Toronto, Ontario M4N3L7",
+      "Longitude":"-79.385000",
+      "Latitude":"43.717960",
+      "SizeTotal":"50 x 150 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637471810205700000/reb82/highres/8/c5093218_1.jpg",
+      "parking": "Attached Garage"
+    }
+  },
+  {
+    "neighborhood": "89896773435445",
+	"neighborhoodname": "Roncesvalles",
+    "Id":"W5079549",
+    "PublicRemarks":"Steps Away From Beautiful High Park, This Spacious Sun-Drenched O/C Condo Is The Perfect Retreat For Those Seeking To Take Advantage Of Toronto's Park Trails & Gardens While Having Easy Accessibility To Urban Amenities. Work From Home W/ Ease In The Convenient Den. Relax & Unwind In The Master Suite Feat W/In Closet & Lrg 4Pc Ensuite W/ Soaker Tub. Modern Layout Boasts Tall Ceiling Heights, Panoramic Windows & Private Balcony W/ Beautiful City Views.**** EXTRAS **** Two Lockers For Additional Storage. W/In Closets In Both Brs. Concierge Service. Walking Distance To High Park & The Keele & Bloor/Dundas W Subway Lines. Close To Schools, Parks, Restaurants, Shops & Easy Highway Access. (27787354)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"2",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Matthew Joseph Regan",
+      "PhoneNumber":"905-916-9400"
+    },
+    "Property": {
+      "Price":"$824,900",
+      "AddressText":"1105-1638 Bloor St W, Toronto, Ontario M6P0A6",
+      "Longitude":"-79.456409",
+      "Latitude":"43.655709",
+      "SizeTotal":"",
+      "image": "https://cdn.realtor.ca/listing/TS637457293324400000/reb82/highres/9/w5079549_1.jpg",
+      "parking": "Visitor Parking"
+    }
+  },
+  {
+    "neighborhood": "89896773435445",
+	"neighborhoodname": "Roncesvalles",
+    "Id":"W5096003",
+    "PublicRemarks":"Bright And Spacious Family Sized 2 Bedroom + Den In Sought After Roncy Neighbourhood. Easy Access To Ttc And Local Amenities. Durable High-End Laminate Floors Throughout. Master With Walk In Closet And Ensuite W/ Sep. Shower And Tub. Den Could Be Used As A Third Bedroom. Amazing Full Laundry Room With Counter Space And Storage. Parking, Locker And 2 Bike Lockers Included.**** EXTRAS **** Fridge, Gas Stove, Microwave, Washer And Dryer. Large Kitchen Pantry, Beautiful Custom Made Closets Throughout (Kids Bedroom, Walk In Closet On The Master And Entry Way Closet), Custom Made Balcony Floor, Custom Roller Blinds, Gas Bbq H-Up (27855786)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"2",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Lance Stoute",
+      "PhoneNumber":"416-222-8600"
+    },
+    "Property": {
+      "Price":"$1,149,900",
+      "AddressText":"420-38 HOWARD PARK AVE, Toronto, Ontario M6R0A7",
+      "Longitude":"-79.449538",
+      "Latitude":"43.652008",
+      "SizeTotal":"",
+      "image": "https://cdn.realtor.ca/listing/TS637473919048700000/reb82/highres/3/w5096003_1.jpg",
+      "parking": "Underground"
+    }
+  },
+  {
+    "neighborhood": "89896773435445",
+	"neighborhoodname": "Roncesvalles",
+    "Id":"W5058074",
+    "PublicRemarks":"Fantastic Location! Stunning Roncesvalles 2.5 Storey, 3 Bedroom + Office, 4 Bathrooms, Finished Basement Separate Entrance! Rear Lane Double Car Garage! Upscale Designed Kitchen W/Center Island & S/S Appliances! 3rd Floor Oasis, Master Bedroom W/Large Walk-In Closet, 3 Piece Ensuite & Double Patio Doors To Unique Balcony Style Deck W/Hot Tub & Lounging Area! Separate Home Office! Private Backyard To Enjoy! Close To All Amenities, Ttc & Schools! (27706735)",
+    "Building":{
+      "BathroomTotal":"4",
+      "Bedrooms":"3",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Randall Weese",
+      "PhoneNumber":"4866-336-9637"
+    },
+    "Property": {
+      "Price":"$2,688,000",
+      "AddressText":"18 Constance St, Toronto, Ontario M6R1S4",
+      "Longitude":"-79.451465",
+      "Latitude":"43.649604",
+      "SizeTotal":"22 x 114 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637467556555570000/reb82/highres/4/w5058074_1.jpg",
+      "parking": "Detached Garage"
+    }
+  },
+  {
+    "neighborhood": "89896773435445",
+	"neighborhoodname": "Roncesvalles",
+    "Id":"W5100050",
+    "PublicRemarks":"Large 2.5 Storey, 5 Bedroom In Parkdale. Just A Short Walk To Vibrant Queen Street West As Well As Minutes Away From Roncesvalles Village Shops And Restaurants.**** EXTRAS **** Property Is Sold In As Is Condition (27872173)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"5",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Frank Merigliano Jr.",
+      "PhoneNumber":"416-233-4913"
+    },
+    "Property": {
+      "Price":"$999,900",
+      "AddressText":"58 Beaty Ave, Toronto, Ontario M6K3B4",
+      "Longitude":"-79.440737",
+      "Latitude":"43.637734",
+      "SizeTotal":"25.66 x 148 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637477873337500000/reb82/highres/0/w5100050_1.jpg",
+      "parking": "None"
+    }
   }
 
 ]

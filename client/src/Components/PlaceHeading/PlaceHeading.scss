@@ -11,8 +11,13 @@
     margin-bottom: 20px;
   }
 
-  &__subheading-span {
+  &__subheading-link {
     color: $text-2;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
 }

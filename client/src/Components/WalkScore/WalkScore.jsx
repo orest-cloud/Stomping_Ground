@@ -1,24 +1,35 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import './WalkScore.scss';
 
 import widget from '../../Assets/Images/walkscore.jpg'
 
-export default function WalkScore() {
-// const ws_wsid = 'g7fa65f76554240329668d461222c883f';
-// const ws_address = '1060 Lombard Street, San Francisco, CA';
-// const ws_format = 'tall';
-// const ws_width = '400';
-// const ws_height = '500';
+export default class WalkScore extends Component {
 
-//<>
-//<div id='ws-walkscore-tile'></div><script type='text/javascript' src='http://www.walkscore.com/tile/show-walkscore-tile.php'></script>
-//</>
+  constructor(props) {
+    super(props);
+    this.state = {address: props.address};
+  }
 
-return (
-  
-  <div className="walkscore">
-      <img src={widget} alt="WalkScore" className="walkscore__image"/>
+  componentDidMount () {
+    var address = this.state.address;
+
+    const script = document.createElement("script");
+    script.setAttribute('type','text/javascript');
+    const scriptText = document.createTextNode("var ws_wsid = 'g7fa65f76554240329668d461222c883f'; var ws_address = '" + address + "'; var ws_format = 'tall'; var ws_width = '400'; var ws_height = '500';");
+    script.appendChild(scriptText);
+    this.divref.appendChild(script);
+    
+    const script2 = document.createElement("script");
+    script2.setAttribute('src','http://www.walkscore.com/tile/show-walkscore-tile.php');
+    this.divref.appendChild(script2);
+  }
+
+  render() {
+    return (
+      <div className="walkscore" ref={elem => this.divref = elem} >
+        <div id='ws-walkscore-tile'></div>
     </div>
-  )
+    )
+  }
 }

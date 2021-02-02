@@ -2,6 +2,7 @@
   {
     "name": "Runnymede",
     "id": "f2f2553a",
+	"description":"The neighbourhood has two Toronto Public Library locations, Runnymede and Annette, and there is a nearby location in Swansea.",
     "location": {
       "address": "591 Annette Street, Toronto",
       "city": "Toronto",
@@ -28,6 +29,74 @@
       "bike": 36,
       "walk": 60,
       "neareststop": "593 Annette Street is a 14 minute walk from the 2 LINE 2 (BLOOR - DANFORTH) at the RUNNYMEDE STATION - EASTBOUND PLATFORM stop.",
+      "nearbyparks": "Beresford Park, Beresford Park and Malta Park."
+    }
+  },
+  
+  {
+    "name": "Lawrence Park",
+    "id": "5467678567867878",
+	"description":"Lawrence Park was one of Toronto's first planned garden suburbs.",
+    "location": {
+      "address": "378 Blythwood Rd, Toronto",
+      "city": "Toronto",
+      "postalcode": "M4N 2Z5",
+      "country": "Canada",
+	  "latitude": 43.7194805,
+	  "longitude": -79.3864244
+    },
+    "scores": {
+      "walk": 81,
+      "walkheading": "Very Walkable",
+      "walksubheading": "Most errands can be accomplished on foot.",
+      "transit": 80,
+      "transitheading": "Excellent Transit",
+      "transitsubheading": "Transit is convenient for most trips.",
+      "bike": 78,
+      "bikeheading": "Very Bikeable",
+      "bikesubheading": "Flat as a pancake, good bike lanes."
+    },
+    "commute": {
+      "destination": "Downtown Toronto",
+      "car": 25,
+      "bus": 38,
+      "bike": 36,
+      "walk": 60,
+      "neareststop": "378 Blythwood Rd, Toronto is a 14 minute walk from the 2 LINE 2 (BLOOR - DANFORTH) at the RUNNYMEDE STATION - EASTBOUND PLATFORM stop.",
+      "nearbyparks": "Beresford Park, Beresford Park and Malta Park."
+    }
+  },
+
+  {
+    "name": "Roncesvalles",
+    "id": "89896773435445",
+	"description":"Culturally, the area is known as the centre of the Polish community in Toronto with prominent Polish institutions, businesses and St Casimir's Catholic Church located on Roncesvalles Avenue.",
+    "location": {
+      "address": "276 Roncesvalles Ave",
+      "city": "Toronto",
+      "postalcode": "M6R 2M2",
+      "country": "Canada",
+	  "latitude": 43.6475443,
+	  "longitude": -79.4498268
+    },
+    "scores": {
+      "walk": 81,
+      "walkheading": "Very Walkable",
+      "walksubheading": "Most errands can be accomplished on foot.",
+      "transit": 80,
+      "transitheading": "Excellent Transit",
+      "transitsubheading": "Transit is convenient for most trips.",
+      "bike": 78,
+      "bikeheading": "Very Bikeable",
+      "bikesubheading": "Flat as a pancake, good bike lanes."
+    },
+    "commute": {
+      "destination": "Downtown Toronto",
+      "car": 25,
+      "bus": 38,
+      "bike": 36,
+      "walk": 60,
+      "neareststop": "276 Roncesvalles Ave, Toronto is a 14 minute walk from the 2 LINE 2 (BLOOR - DANFORTH) at the RUNNYMEDE STATION - EASTBOUND PLATFORM stop.",
       "nearbyparks": "Beresford Park, Beresford Park and Malta Park."
     }
   }

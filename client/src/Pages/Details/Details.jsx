@@ -66,7 +66,7 @@ export default class Details extends Component {
 
       <main className="details">
 
-        <PlaceHeading heading={this.state.propertiesData.Property.AddressText} subheading={`In the neighborhood of ${this.state.propertiesData.neighborhoodname}`} />
+        <PlaceHeading heading={this.state.propertiesData.Property.AddressText} subheading="In the neighborhood of " hood={this.state.propertiesData.neighborhoodname} hoodLink={this.state.propertiesData.neighborhood} />
 
         <div className="details__property-info-container">
           <PropertyInfo data={this.state.propertiesData} />
@@ -76,7 +76,7 @@ export default class Details extends Component {
         <div className="details__hr"></div>
 
         <div className="details__visuals-container">
-          <WalkScore />
+          <WalkScore address={this.state.propertiesData.Property.AddressText} />
           <Photos mode="column" data={this.state.photosData} />
         </div>
 

@@ -28,8 +28,8 @@ export default function Home() {
 
       <div className="info__column">
         <h2 className="info__heading">What is this?</h2>
-        <p className="info__paragraph">Stomping Ground is the place to come when you’re looking for a place to call home. Immerse yourself in the world’s residential neighborhoods without the drive or the airfare.</p>
-        <p className="info__paragraph">It’s a one-stop shop: choose a listing, check out its WalkScore&reg; details, and take a virtual stroll through the area by browsing real photos uploaded by neighborhood residents.</p>
+        <p className="info__paragraph">"Stomping Ground is the place to come when you’re looking for a place in Toronto to call home. Immerse yourself in the city’s residential neighborhoods without the drive or the airfare.</p>
+        <p className="info__paragraph">It’s a one-stop shop: choose a listing, check out its WalkScore&reg; details, and take a virtual stroll through the area by browsing real, unretouched photos uploaded by users like you.</p>
       </div>
 
       <div className="info__column">
@@ -64,8 +64,8 @@ export default function Home() {
         </div>
 
         <div className="samples__place">
-          <Link className="samples__image-link" to="/results/f2f2553a"><img src={sample4} alt="A nice neighborhood" className="samples__image"/></Link>
-          <Link className="samples__link" to="/results/f2f2553a"><h3 className="samples__place-name">Roncesvalles</h3></Link>
+          <Link className="samples__image-link" to="/results/89896773435445"><img src={sample4} alt="A nice neighborhood" className="samples__image"/></Link>
+          <Link className="samples__link" to="/results/89896773435445"><h3 className="samples__place-name">Roncesvalles</h3></Link>
           <p className="samples__place-description">Roncesvalles is a neighbourhood in the city of Toronto, Ontario, Canada centred on Roncesvalles Avenue, a north-south street leading from the intersection of King and Queen Streets to the south, north to Dundas Street West, a distance of roughly 1.5 kilometres.</p>
         </div>
 

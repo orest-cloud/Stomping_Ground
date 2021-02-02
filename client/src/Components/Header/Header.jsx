@@ -8,8 +8,8 @@ export default function Header() {
     <nav className="header">
 
       <Link to="/" className="header__logo-link">Stomping<span className="header__logo-link-span">Ground</span></Link>
-      <Link to="/createaccount" className="header__link">Create Account</Link>
-      <Link to="/signin" className="header__link header__link--last-item">Sign In</Link>
+      {/* <Link to="/createaccount" className="header__link">Create Account</Link>
+      <Link to="/signin" className="header__link header__link--last-item">Sign In</Link> */}
 
     </nav>
   )

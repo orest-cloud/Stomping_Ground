@@ -35,9 +35,9 @@
 
 // Photos render in column mode
 .photos-column {
-  width: 445px;
+  // width: px;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px 40px;
+  gap: 10px 10px;
 }

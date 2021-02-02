@@ -24,7 +24,7 @@ export default function Hero() {
         <div className="hero__links-list-container">
           <ul className="hero__links-list">
             <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Runnymede</Link></li>
-            <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Lawrence Park</Link></li>
+            <li className="hero__links-list-item"><Link to="/results/5467678567867878" className="hero__links-list-item-link">Lawrence Park</Link></li>
           </ul>
 
           <ul className="hero__links-list">
