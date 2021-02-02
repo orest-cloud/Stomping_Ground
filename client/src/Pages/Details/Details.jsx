@@ -24,10 +24,9 @@ export default class Details extends Component {
   currentID = this.props.match.params.id;
 
   state = {
-    mapData: null,
     neighborhoodData: null,
-    photosData: null,
-    propertiesData: null
+    propertiesData: null,
+    photosData: null
   }
 
   componentDidMount() {
@@ -36,13 +35,15 @@ export default class Details extends Component {
 
   apiFetchCall = (currentID) => {
     Axios
-        .get(`${this.apiURL}${currentID}`)
+        .get(`${this.apiURL}${currentID}`, { params: { name: this.state.address, limit: 15 }})
         .then((res) => {
-          console.log('%c Axios response:', "color: red; font-weight: bold;");
+          console.log('%c Axios response:', "color: green; font-weight: bold;");
           console.log(res);
 
             this.setState({
-              propertiesData: res.data
+              neighborhoodData: res.data[0],
+              propertiesData: res.data[1],
+              photosData: res.data[2]
             });
         })
         .catch((err) => console.log(err));
@@ -53,7 +54,7 @@ export default class Details extends Component {
     document.title = "Details | StompingGround";
 
     // Returns a blank area until Axios data for the state is loaded
-    if (!this.state.propertiesData) {
+    if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
       return (
         <Header />
       )
@@ -76,7 +77,7 @@ export default class Details extends Component {
 
         <div className="details__visuals-container">
           <WalkScore />
-          <Photos mode="column" />
+          <Photos mode="column" data={this.state.photosData} />
         </div>
 
       </main>

@@ -1,14 +1,9 @@
 const express = require('express')
-const { response } = require('express');
 const router = express.Router()
 const axios = require('axios');
 
 const neighborhoods = require('../data/neighborhoods.json');
 const properties = require('../data/properties.json');
-
-const fs = require('fs');
-const { v4: uuidv4 } = require('uuid');
-const { stringify } = require('querystring');
 
 const apikey = "AIzaSyAUiAAMvTlsK-rT4pdUru3DOSDK4jhOjjA";
 
@@ -116,7 +111,6 @@ router
 	
 	// Gets address string to pass to Google Photos functions
 	let placeQuery = hoodID.location.address;
-	console.log("PlaceQuery is: " + placeQuery);
 	
 	
 	// Starts routine to get Google Photos
