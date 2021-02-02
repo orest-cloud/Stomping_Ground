@@ -34,7 +34,7 @@ export default class Results extends Component {
 
   apiFetchCall = (currentAreaID) => {
     Axios
-        .get(`${this.apiURL}${currentAreaID}`)
+        .get(`${this.apiURL}${currentAreaID}`, { params: { name: this.state.address, limit: 15 }})
         .then((res) => {
           console.log('%c Results Axios response:', "color: red; font-weight: bold;");
           console.log(res);
@@ -52,7 +52,7 @@ export default class Results extends Component {
     document.title = "Results | StompingGround";
 
     // Returns a blank area until Axios data for the state is loaded
-    if (!this.state.neighborhoodData) {
+    if ((!this.state.neighborhoodData) || (!this.state.photosData)) {
       return (
         <Header />
         )
@@ -77,7 +77,7 @@ export default class Results extends Component {
   
       </main>
   
-      <Photos mode="row" />
+      <Photos mode="row" data={this.state.photosData} />
   
       </>
     )

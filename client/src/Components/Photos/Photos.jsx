@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuid } from "uuid";
 
 import Photo from '../Photo/Photo'
 
@@ -6,68 +7,7 @@ import './Photos.scss';
 
 export default function Photos(props) {
 
-  const photosData = [
-    {
-      id: 1,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 2,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 3,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 4,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 5,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 6,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 7,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 8,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 9,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 10,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 11,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 12,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 13,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 14,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    },
-    {
-      id: 15,
-      src: "https://i.imgur.com/bRYsNY9.jpg"
-    }
-  ];
+  const photosData = props.data;
   
   // Declaration of variables
   let blockMode = null;
@@ -87,7 +27,7 @@ export default function Photos(props) {
       <div className="photos-row">
       {/* Generates rows of photos from the data */}
       {dataToRender.map(data => {
-        return (<Photo key={data.id} id={data.id} image={data.src} />)
+        return (<Photo key={uuid()} id={uuid()} image={data.imagedata} name={data.name} />)
       })}
     </div>
 
@@ -100,7 +40,7 @@ export default function Photos(props) {
     photosRender =
     <div className="photos-column">
     {dataToRender.map(data => {
-      return (<Photo key={data.id} id={data.id} image={data.src} />)
+      return (<Photo key={uuid()} id={uuid()} image={data.imagedata} name={data.name} />)
     })}
     </div>      
   }

@@ -37,7 +37,7 @@ async function googleApiGetNearby(lat, lng) {
     try {
     const data = await axios.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?radius=1500", { params: { location: lat + "," + lng, key: apikey }});
       //check if match successful
-      if (data.data.status == 200) {
+      if (data.data.status == 'OK') {
         let photoRefList = [];
         for (let i = 0; i < data.data.results.length; i++) {
           let photos = data.data.results[i].photos;
