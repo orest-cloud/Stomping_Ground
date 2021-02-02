@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 
 import './WalkScore.scss';
 
-import widget from '../../Assets/Images/walkscore.jpg'
-
 export default class WalkScore extends Component {
 
   constructor(props) {

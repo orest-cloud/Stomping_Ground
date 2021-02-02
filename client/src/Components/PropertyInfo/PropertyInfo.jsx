@@ -47,7 +47,7 @@ export default function PropertyInfo(props) {
           <h4 className="property-info__label">Total Size</h4>
           <p className="property-info__data">{totalSize}</p>
 
-          <h4 className="property-info__label">Bathrooms</h4>
+          <h4 className="property-info__label">Parking</h4>
           <p className="property-info__data">{parking}</p>
         </div>
       </div>

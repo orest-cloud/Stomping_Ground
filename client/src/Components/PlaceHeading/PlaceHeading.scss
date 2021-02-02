@@ -6,9 +6,10 @@
   margin-bottom: 20px;
 
   &__heading {
-    @include font($heading-font, 4.8rem, 600);
+    @include font($heading-font, 4.5rem, 600);
     color: $text-1;
-    margin-bottom: 20px;
+    line-height: 48px;
+    margin-bottom: 5px;
   }
 
   &__subheading-link {

@@ -37,8 +37,6 @@ export default class Details extends Component {
     Axios
         .get(`${this.apiURL}${currentID}`, { params: { name: this.state.address, limit: 15 }})
         .then((res) => {
-          console.log('%c Axios response:', "color: green; font-weight: bold;");
-          console.log(res);
 
             this.setState({
               neighborhoodData: res.data[0],

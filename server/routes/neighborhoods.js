@@ -27,7 +27,7 @@ async function googleApiGetLatLng(addressName) {
     }
   }
 
-  //get nearby locations to latitude and longitude
+//get nearby locations to latitude and longitude
 async function googleApiGetNearby(lat, lng) {
     try {
     const data = await axios.get("https://maps.googleapis.com/maps/api/place/nearbysearch/json?radius=1500", { params: { location: lat + "," + lng, key: apikey }});
