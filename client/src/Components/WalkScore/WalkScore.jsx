@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 
 import './WalkScore.scss';
 
+// WSID key import
+// const {wsid} = require('../../config');
+
 export default class WalkScore extends Component {
 
   constructor(props) {
@@ -10,10 +13,13 @@ export default class WalkScore extends Component {
   }
 
   componentDidMount () {
+
+    
     var address = this.state.address;
 
     const script = document.createElement("script");
     script.setAttribute('type','text/javascript');
+
     const scriptText = document.createTextNode("var ws_wsid = 'g7fa65f76554240329668d461222c883f'; var ws_address = '" + address + "'; var ws_format = 'tall'; var ws_width = '400'; var ws_height = '500';");
     script.appendChild(scriptText);
     this.divref.appendChild(script);

@@ -2,8 +2,6 @@ import React from 'react';
 
 import './Map.scss';
 
-// import map from '../../Assets/Images/map_dummy.png'
-
 export default function Map(props) {
 
   // Specify whether map is centring on a general area or pinning an address
@@ -11,7 +9,8 @@ export default function Map(props) {
   const mapMode = props.mode;
   let mapSource = null;
 
-  const apiKey="AIzaSyBK1oiKzJ6dr3Jt10EGmNMpHSPfMzuEelw";
+  // API key import
+	const {apikey} = require('../../config');
 
   
   if (mapMode === "centre") {
@@ -19,7 +18,7 @@ export default function Map(props) {
     const longitude = props.longitude;
 
     // center on an area
-    mapSource = `https://www.google.com/maps/embed/v1/view?zoom=14&center=${latitude}%2C${longitude}&key=${apiKey}`;
+    mapSource = `https://www.google.com/maps/embed/v1/view?zoom=14&center=${latitude}%2C${longitude}&key=${apikey}`;
 
   } else {
     // Sample query:
@@ -27,7 +26,7 @@ export default function Map(props) {
     const query = props.query;
 
     // pin a place
-    mapSource = `https://www.google.com/maps/embed/v1/place?q=${query}&key=${apiKey}`;
+    mapSource = `https://www.google.com/maps/embed/v1/place?q=${query}&key=${apikey}`;
   }
   
 

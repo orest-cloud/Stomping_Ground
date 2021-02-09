@@ -5,7 +5,8 @@ const axios = require('axios');
 const neighborhoods = require('../data/neighborhoods.json');
 const properties = require('../data/properties.json');
 
-const apikey = "AIzaSyAUiAAMvTlsK-rT4pdUru3DOSDK4jhOjjA";
+// API key import
+const {apikey} = require('../config');
 
 
 //==============================================//
