@@ -1,27 +1,19 @@
 import React from 'react';
-import { useState } from "react";
-import AnimateCC, { GetAnimationObjectParameter } from "react-adobe-animate";
 
 import './AnimatedLogo.scss';
 
-export default function AnimatedLogo() {
+export default function AnimatedLogo(props) {
 
-  const [paused, setPaused] = useState(false);
-  // const [animationObject, getAnimationObject] = useState<GetAnimationObjectParameter|null>(null);
-  const _a = useState(null), animationObject = _a[0], getAnimationObject = _a[1];
-  const onClick = () => setPaused(!paused);
+  const source = null;
 
-  console.log(animationObject);
-
+  if (props.mode = "animated") {
+    source = "AnimatedLogo.html";
+  } else {
+    source = "AnimatedLogo_Static.html";
+  }
+  
   return (
-    <div style={{ width: "400px" }}>
-      <AnimateCC
-        animationName="AnimatedLogo"
-        getAnimationObject={getAnimationObject}
-        paused={paused}
-      />
-
-      <button onClick={onClick}>{paused ? "Unpause" : "Pause"}</button><br />
-    </div>
-  );
+    
+    <iframe src={source} scrolling="no" frameborder="0" class="logo__frame"></iframe>
+  )
 }

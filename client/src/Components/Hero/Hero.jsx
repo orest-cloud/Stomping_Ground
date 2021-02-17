@@ -11,7 +11,6 @@ export default function Hero() {
     <section className="hero">
       <div className="hero__container">
         <AnimatedLogo />
-        <h1 className="hero__heading">Stomping<span className="hero__heading-span">Ground</span></h1>
         <h3 className="hero__sub-heading">Get a feel for the Toronto neighborhood you're thinking of living in.</h3>
 
 
