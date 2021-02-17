@@ -9,7 +9,15 @@
     height: 80px;
     margin-bottom: 5px;
 
+    &--hidden {
+      display: none;
+      visibility: hidden;
+    }
 
+    &--visible {
+      display: block;
+      visibility: visible;
+    }
   }
 
 }
