@@ -59,23 +59,36 @@
   }
 
   &__links-list-container {
-    @include flex(row nowrap, space-between, flex-start);	
+    // @include flex(row nowrap, space-between, flex-start);
+
+    display: grid;
+    // grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 12px 12px;
+    grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . ."
+    ". . . .";
   }
 
-  &__links-list {
-    list-style: none;
-    margin: 0 20px;
-    // width: 207px;
+  // &__links-list {
+  //   list-style: none;
+  //   margin: 0 20px;
+  //   // width: 207px;
 
-    &-item {
-      margin-bottom: 16px;
-    }
-  }
+  //   &-item {
+  //     margin-bottom: 16px;
+  //   }
+  // }
 
-  &__links-list-item-link {
+  &__links-list-link {
     @include font($heading-font, 1.7rem, 500);
     background-color: $bg-fill-1;
     border-radius: 3px;
+    // display: inline;
     color: White;
     padding: 1px 3px;
     text-decoration: none;

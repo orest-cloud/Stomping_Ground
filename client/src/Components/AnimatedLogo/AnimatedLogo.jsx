@@ -26,6 +26,6 @@ export default function AnimatedLogo(props) {
   // }
   
   return (
-    <iframe src={source} scrolling="no" frameBorder="0" className="logo__frame"></iframe>
+    <iframe title="Animated logo" src={source} scrolling="no" frameBorder="0" className="logo__frame"></iframe>
   )
 }

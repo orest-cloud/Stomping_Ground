@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
+import { v4 as uuid } from "uuid";
 
 import AnimatedLogo from '../AnimatedLogo/AnimatedLogo'
 
@@ -8,6 +9,32 @@ import './Hero.scss';
 export default class Hero extends Component {
 
   state = {
+    neighborhoodsList: [
+      {name: "Annex", id: ""},
+      {name: "The Beaches", id: ""},
+      {name: "Cabbagetown", id: ""},
+      {name: "Casa Loma", id: ""},
+      {name: "Danforth", id: ""},
+      {name: "Dufferin Grove", id: ""},
+      {name: "Forest Hill", id: ""},
+      {name: "High Park", id: ""},
+      {name: "Kensington", id: ""},
+      {name: "Lawrence Park", id: "5467678567867878"},
+      {name: "Leslieville", id: ""},
+      {name: "Little Portugal", id: ""},
+      {name: "Parkdale", id: ""},
+      {name: "Regent Park", id: ""},
+      {name: "Roncesvalles", id: "89896773435445"},
+      {name: "Riverdale", id: ""},
+      {name: "Rosedale", id: ""},
+      {name: "Runnymede", id: "f2f2553a"},
+      {name: "Swansea", id: ""},
+      {name: "Trinity-Bellwoods", id: ""},
+      {name: "University", id: ""},
+      {name: "Willowdale", id: ""},
+      {name: "Wychwood", id: ""},
+      {name: "York University Heights", id: ""}
+    ],
     logoAnimationDone: false,
     logoMode: "static"
   }
@@ -44,25 +71,14 @@ export default class Hero extends Component {
           <h2 className="hero__call-to-action">Choose an area to begin</h2>
 
           <div className="hero__links-list-container">
-            <ul className="hero__links-list">
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Runnymede</Link></li>
-              <li className="hero__links-list-item"><Link to="/results/5467678567867878" className="hero__links-list-item-link">Lawrence Park</Link></li>
-            </ul>
 
-            <ul className="hero__links-list">
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Leslieville</Link></li>
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Parkdale</Link></li>
-            </ul>
+           {this.state.neighborhoodsList.map(data => {
+              return (
+                <div className="hero__links-list-link-container" key={uuid()}>
+                <Link to={`/results/${data.id}`} className="hero__links-list-link">{data.name}</Link></div>
+              )
+            })}
 
-            <ul className="hero__links-list">
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Rosedale</Link></li>
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Swansea</Link></li>
-            </ul>
-
-            <ul className="hero__links-list">
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">Willowdale</Link></li>
-              <li className="hero__links-list-item"><Link to="/results/f2f2553a" className="hero__links-list-item-link">York University Heights</Link></li>
-            </ul>
           </div>
 
         </div>
