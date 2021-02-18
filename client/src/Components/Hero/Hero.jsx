@@ -10,8 +10,8 @@ export default class Hero extends Component {
 
   state = {
     neighborhoodsList: [
-      {name: "Annex", id: ""},
-      {name: "The Beaches", id: ""},
+      {name: "Annex", id: "084c2b47-bdad"},
+      {name: "Beaches", id: ""},
       {name: "Cabbagetown", id: ""},
       {name: "Casa Loma", id: ""},
       {name: "Danforth", id: ""},
@@ -33,7 +33,7 @@ export default class Hero extends Component {
       {name: "University", id: ""},
       {name: "Willowdale", id: ""},
       {name: "Wychwood", id: ""},
-      {name: "York University Heights", id: ""}
+      {name: "York University Heights", id: "a35336d3-06fd"}
     ],
     logoAnimationDone: false,
     logoMode: "static"

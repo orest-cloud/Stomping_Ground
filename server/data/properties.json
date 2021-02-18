@@ -312,7 +312,198 @@
       "image": "https://cdn.realtor.ca/listing/TS637477873337500000/reb82/highres/0/w5100050_1.jpg",
       "parking": "None"
     }
+  },
+  {
+    "neighborhood": "a35336d3-06fd",
+	"neighborhoodname": "York University Heights",
+    "Id":"W5116713",
+    "PublicRemarks":"Excellent Location To Live In Or For Investment * Located In Heart Of York University Community * Spacious Bedrooms In The 2nd Floor With Closets * Easy To Earn Rental Income * Close To Shuttle Bus Stop * Walking Distance To Bus/Subway * 9 Bedrooms+5 Washrooms * Double Car Garage, Master With Ensuite * Shows Nice & Clean * Beautiful Semi-Detached, Just Steps To York University.**** EXTRAS **** Washer/Dryer, 3 Fridges, Stove, Cooktop, All Elfs., All Window Coverings, Central Vacuum (As Is Condition). (27940097)",
+    "Building":{
+      "BathroomTotal":"6",
+      "Bedrooms":"6",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Hei Jin Jeong",
+      "PhoneNumber":"416-491-3228"
+    },
+    "Property": {
+      "Price":"$979,000",
+      "AddressText":"26 Boake St, Toronto, Ontario M3J0B6",
+      "Longitude":"-79.50065945935049",
+      "Latitude":"43.76807126913957",
+      "SizeTotal":"20.01 x 100.07 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637491006672730000/reb82/highres/3/w5116713_2.jpg",
+      "parking": "Detached Garage"
+    }
+  },
+  {
+    "neighborhood": "a35336d3-06fd",
+	"neighborhoodname": "York University Heights",
+    "Id":"W5102812",
+    "PublicRemarks":"Stunning Family Townhouse In Heart Of York University Village.This Townhouse Has Built-In Dbl Garage.Very Private Balcony & Juliet Balcony.Many Upgrades:New Broadloom,Hardwood Floors,Ceramic Tile,Granite Counters & Stainless Steel Appliances.In Suite Laundry & A Nice Private Foyer.Central Vacuum & Cac. Walking Distance To Campus,Ttc Stop 2 Min Walk,Finch West Subway Station,Walmart.Great Opportunity For Family W/Children,1st Time Buyers & Young Professionals.**** EXTRAS **** Inc S.S. Fridge, S.S. Stove, S.S Dishwasher, Washer & Dryer, Cac, Central Vac., Gdo + Remote, Elf And Window Coverings. (27883864)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"3",
+      "Type":"Single Family"
+    },
+    "Contact": {
+      "Name":"Lilia Butko",
+      "PhoneNumber":"416-534-1124"
+    },
+    "Property": {
+      "Price":"$725,000",
+      "AddressText":"43-365 Murray Ross Pkwy, Toronto, Ontario M3J3T7",
+      "Longitude":"-79.5002949592575",
+      "Latitude":"43.765854188733144",
+      "SizeTotal":"12 ft ,10 in x 12 ft",
+      "image": "https://cdn.realtor.ca/listing/TS637479599414000000/reb82/highres/2/w5102812_1.jpg",
+      "parking": "Attached Garage"
+    }
+  },
+  {
+    "neighborhood": "a35336d3-06fd",
+	"neighborhoodname": "York University Heights",
+    "Id":"W5115448",
+    "PublicRemarks":"Spacious And Bright Apt *Ensuite Laundry *Large Locker Room Included *Parquet And Ceramic Floors Throughout . ** Membership To Rec Facilities Included In Condo Fees-See Photos ** Walk To Ttc Subway, York University,Walmart,Schools,Shopping *Close Proximity To All Amenities,Major Highways, Grocery Stores, School, Library And More**** EXTRAS **** Existing Light Fixtures (27933587)",
+    "Building":{
+      "BathroomTotal":"1",
+      "Bedrooms":"2",
+      "Type":"Apartment"
+    },
+    "Contact": {
+      "Name":"Roberto Tancredi",
+      "PhoneNumber":"416-739-7200"
+    },
+    "Property": {
+      "Price":"$478,000",
+      "AddressText":"201-25 Four Winds Dr, Toronto, Ontario M3J1K8",
+      "Longitude":"-79.49189023227163",
+      "Latitude":"43.765876377226945",
+      "SizeTotal":"17 ft ,2 in x 10 ft ,7 in",
+      "image": "https://cdn.realtor.ca/listing/TS637489728620470000/reb82/highres/8/w5115448_1.jpg",
+      "parking": "Underground, Visitor Parking"
+    }
+  },
+  {
+    "neighborhood": "a35336d3-06fd",
+	"neighborhoodname": "York University Heights",
+    "Id":"W5113059",
+    "PublicRemarks":"Welcome To 131 Derrydown Rd! Steps To York University, Ttc, Subway & Upcoming Lrt. This Detached Bungalow Has The Best Curb Appeal On This Mature Street! Original Owners, This Home Is Immaculate. Gleaming Hardwood Floors Under Carpet In Living Room! Finished Basement Features Marble Floors, An Extra Bedroom And Full Kitchen And Dining Area! This Home Sits On A Beautifully Sized Lot With A Side Entrance To The Basement! Do Not Miss This One!**** EXTRAS **** Lot Irreg Cont'd: S/T Ease As In B127847 Twp Of York/North York, City Of Toronto. Included: Mn Floor Fridge, Stove (Electric), Hood Fan & Bsmt Fridge, 2 Stoves (Electric & Gas) , Washer, All Elfs, All Window Coverings. (27924876)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"3",
+      "Type":"House"
+    },
+    "Contact": {
+      "Name":"Carly Victoria Fiore",
+      "PhoneNumber":"416-265-0070"
+    },
+    "Property": {
+      "Price":"$999,000",
+      "AddressText":"131 Derrytown Rd, Toronto, Ontario M3J1R6",
+      "Longitude":"-79.49311318809325",
+      "Latitude":"43.76011750200893",
+      "SizeTotal":"46.03 x 111.06 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637487143819670000/reb82/highres/9/w5113059_1.jpg",
+      "parking": "Attached Garage"
+    }
+  },
+  {
+    "neighborhood": "084c2b47-bdad",
+	"neighborhoodname": "The Annex",
+    "Id":"C4944652",
+    "PublicRemarks":"Renovated Georgian At Castle Hill! Quality And Detail Prevail Throughout, One Of The Largest Units Offered. 3+1 Bedrooms All With Private Baths, Elevator, Private 2 Car Garage Ensuite To Lower Level, Main Floor Walk Out To Terrace, Roof Top Deck. The Perfect Home In A Sought After Neighbourhood, Convenient To Everything, Parks, Schools, Restaurants, T.T.C. This Is Truly A Pleasure To Show.**** EXTRAS **** See Feature Sheet For Inclusions & Exclusions. (27407744)",
+    "Building":{
+      "BathroomTotal":"5",
+      "Bedrooms":"3",
+      "Type":"Townhouse"
+    },
+    "Contact": {
+      "Name":"Daena Allen-Noxon",
+      "PhoneNumber":"416-960-9995"
+    },
+    "Property": {
+      "Price":"$2,495,000",
+      "AddressText":"236 Walmer Rd, Toronto, Ontario, M5R 3R7",
+      "Longitude":"-79.40922885925933",
+      "Latitude":"43.67663336978762",
+      "SizeTotal":"15.75 x 110.73 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637414674886270000/reb82/highres/2/c4944652_10.jpg",
+      "parking": "Garage"
+    }
+  },
+  {
+    "neighborhood": "084c2b47-bdad",
+	"neighborhoodname": "The Annex",
+    "Id":"C5078069",
+    "PublicRemarks":"Strategically Perched Above A Quiet, Tree-Lined Neighbourhood, 321 Davenport Is Tucked Into The Annex & Only A Short Walk To Yorkville, Top Boutiques Premier Health & Wellness Spots & Neighbourhood Favorites. Exclusive High-Design Coupled With Elegance & Minimalist World Class Architecture Make This Modern Icon The Private Boutique Residence For Toronto's Elite. One Of Only 18 Units, This Upscale 2-Bdrm & 2-Baths Suite Is Approx. 1,298 Sq.Ft. + Outdoor Space.**** EXTRAS **** Floor To Ceiling Windows & Outdoor Space Surrounded By Lush Views Of Residential Treetops. Plan Customization Avail, Impressive Contemporary Designed Kitchen & Bathrooms, Miele Appliances, Oak Hardwood Floors, 1 Ev Parking & 1 Locker Incl. (27780887)",
+    "Building":{
+      "BathroomTotal":"2",
+      "Bedrooms":"2",
+      "Type":"Apartment"
+    },
+    "Contact": {
+      "Name":"Robert S. Greenberg",
+      "PhoneNumber":"416-441-2888"
+    },
+    "Property": {
+      "Price":"$2,450,990",
+      "AddressText":"201-321 Davenport Rd, Toronto ON M5R1K5",
+      "Longitude":"-79.40092609973804",
+      "Latitude":"43.67465269649731",
+      "SizeTotal":"20 ft x 24 ft",
+      "image": "https://cdn.realtor.ca/listing/TS637457229846000000/reb82/highres/9/c5078069_1.jpg",
+      "parking": "Underground, Visitor Parking"
+    }
+  },
+  {
+    "neighborhood": "084c2b47-bdad",
+	"neighborhoodname": "The Annex",
+    "Id":"C5111460",
+    "PublicRemarks":"Stately Annex Designer Featuring Conversion Of A Reinvented Century Victorian To A Modern Contemporary Triplex Design. Each Unit W/ Laundry, Gourmet Kitchen , Stone Counter, Spa Baths, Spacious Bdrms, High Ceilings. Main W/O To Deck & Garden. Upper Incl. Expansive Rooftop Deck. Instant Cash Flow W/ Main Flr Rented $2975/Mo Lease To 21/04/30. Upper $3500/Mo + Hydro No Lease. Bsmt Vacant - Proj Inc. +$1900.Walk To Subway, Uoft, Yorkville**** EXTRAS **** Tenant Score:10 Out Of 10!Walk/Rider Score: 96/100 = Paradise. Great For Cash Flow, But Also Potential To Live-In & Collect Rent, Or Co-Own. New S/S Appl. In Tenanted Units. Capitalize On A Rental Market Set To Rebound! Ask For Financials (27918496)",
+    "Building":{
+      "BathroomTotal":"4",
+      "Bedrooms":"6",
+      "Type":"House"
+    },
+    "Contact": {
+      "Name":"Daniel Todd Freeman",
+      "PhoneNumber":"416-937-5556"
+    },
+    "Property": {
+      "Price":"$2,499,000",
+      "AddressText":"352 Brunswick Ave, Toronto, Ontario M5R2Y9",
+      "Longitude":"-79.40839764391666",
+      "Latitude":"43.66776223374111",
+      "SizeTotal":"21 x 127 FT",
+      "image": "https://cdn.realtor.ca/listing/TS637486276955300000/reb82/highres/0/c5111460_1.jpg",
+      "parking": "None"
+    }
+  },
+  {
+    "neighborhood": "084c2b47-bdad",
+	"neighborhoodname": "The Annex",
+    "Id":"C5091691",
+    "PublicRemarks":"Your Opportunity To Own A Piece Of History. Converted From An Original Eaton Coach House. 3 Bedrooms On 4 Floors + Private Stone Terrace Off Living Room & Fully Finished Lower Level Family Room. Surrounded By Trees, In The Heart Of The Annex, This Lush Residential Setting Is Close To Bloor St. & The University Of Toronto. Recent Renovations Include A Modern State-Of-The-Art Kitchen, New Bathrooms & French Limestone Floors. Includes 1 Car Courtyard Parking.**** EXTRAS **** French Limestone Throughout Main Floor, Built In White Oak Fireplace Surround, French Doors With Walkout To Stone Terrace, All Att. Broadloom, Wolf Gas Stove W/Viking Exhaust, Miele Fridge & Dw., Garburator, Central A/C, Central Vac. (27837289)",
+    "Building":{
+      "BathroomTotal":"4",
+      "Bedrooms":"3",
+      "Type":"Apartment"
+    },
+    "Contact": {
+      "Name":"Allan Consky",
+      "PhoneNumber":"416-960-9995"
+    },
+    "Property": {
+      "Price":"$2,595,000",
+      "AddressText":"78 Lowther Ave, Toronto, Ontario M5R1C8",
+      "Longitude":"-79.40032614391659",
+      "Latitude":"43.67021143007476",
+      "SizeTotal":"14 ft ,2 in x 13 ft ",
+      "image": "https://cdn.realtor.ca/listing/TS637469238427870000/reb82/highres/1/c5091691_2.jpg",
+      "parking": "1 space"
+    }
   }
-
 ]
 

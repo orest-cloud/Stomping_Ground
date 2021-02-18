@@ -99,5 +99,71 @@
       "neareststop": "276 Roncesvalles Ave, Toronto is a 14 minute walk from the 2 LINE 2 (BLOOR - DANFORTH) at the RUNNYMEDE STATION - EASTBOUND PLATFORM stop.",
       "nearbyparks": "Beresford Park, Beresford Park and Malta Park."
     }
-  }
+  },
+  {
+    "name": "York University Heights",
+    "id": "a35336d3-06fd",
+	"description":"York University Heights, also known as Northwood Park, is a large, multicultural area home to the main York University campus.",
+    "location": {
+      "address": "1408 Finch Ave W",
+      "city": "North York",
+      "postalcode": "M3J 1P2",
+      "country": "Canada",
+	  "latitude": 43.76365516532559,
+	  "longitude": -79.49046887524516
+    },
+    "scores": {
+      "walk": 68,
+      "walkheading": "Somewhat Walkable",
+      "walksubheading": "",
+      "transit": 82,
+      "transitheading": "",
+      "transitsubheading": "",
+      "bike": 67,
+      "bikeheading": "",
+      "bikesubheading": ""
+    },
+    "commute": {
+      "destination": "",
+      "car": 25,
+      "bus": 38,
+      "bike": 36,
+      "walk": 60,
+      "neareststop": "",
+      "nearbyparks": ""
+    }
+  },
+  {
+    "name": "The Annex",
+    "id": "084c2b47-bdad",
+	"description":"Next to University of Toronto's St. George Campus, The Annex is a lively area that draws students to its casual eateries, indie bookshops, bars and cafes on Bloor Street West.",
+    "location": {
+      "address": "88 Spadina Rd",
+      "city": "Toronto",
+      "postalcode": "M5R 2S8",
+      "country": "Canada",
+	  "latitude": 43.67108051261766,
+	  "longitude":-79.40435141976562 
+    },
+    "scores": {
+      "walk": 89,
+      "walkheading": "89",
+      "walksubheading": "",
+      "transit": 96,
+      "transitheading": "",
+      "transitsubheading": "",
+      "bike": 78,
+      "bikeheading": "",
+      "bikesubheading": ""
+    },
+    "commute": {
+      "destination": "",
+      "car": 25,
+      "bus": 38,
+      "bike": 36,
+      "walk": 60,
+      "neareststop": "",
+      "nearbyparks": ""
+    }
+  }  
 ]
