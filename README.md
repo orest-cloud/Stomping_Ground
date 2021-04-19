@@ -1,8 +1,6 @@
 # Stomping Ground
 ## A React app that brings together property listings data, neighborhood walkability scores, and Google Maps user photos.
 
-To be deployed publicly in March 2021
-
 **Browse property listings and get a look inside neighborhoods you're interested in.**
 
 In a time when global and even local travel has been shut down, people still want to get a sense of the neighbourhood they're considering moving to. Walkability to nearby amenities and access to transit is an important factor in choosing a home.
