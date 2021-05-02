@@ -22,7 +22,4 @@ What differentiates _Stomping Ground_ from existing websites is the emphasis on 
 
 ![Property details page](https://i.imgur.com/cojVO7H.jpg)
 
-
-Phase 2 of production will include adding a more complete list of neighborhoods to the homepage, as well as arranging them in an interactive vector map of Toronto.
-
-A second iteration of the neighborhood page will be implemented, integrating the various components more centrally.
+The front end of Stomping Ground is built in React, while the back end server uses Express.js.
