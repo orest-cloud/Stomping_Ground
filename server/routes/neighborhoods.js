@@ -24,7 +24,7 @@ async function googleApiGetLatLng(addressName) {
       }
     }
     catch (err) {
-      next(err)
+      console.log(err)
     }
   }
 

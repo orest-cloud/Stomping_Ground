@@ -8,4 +8,14 @@
     max-height: 448px;
   }
 
+  &__dummy {
+    background-color: gainsboro;
+    max-width: 600px;
+    font-size: 1.6rem;
+    height: 450px;
+    opacity: 0.5;
+    padding: 10px;
+    width: 100%;
+  }
+
 }
