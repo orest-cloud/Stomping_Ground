@@ -7,8 +7,11 @@ const properties = require('../data/properties.json');
 
 // API key import
 const {apikey} = require('../config');
-	
 
+//API calls on or off config
+const {gphotos_enabled} = require('../api-config');
+const dummyImageData = require('../data/dummy-image-data.json');
+	
 //==============================================//
 // Functions for processing Google Photos data
 //==============================================//
@@ -116,23 +119,27 @@ let placeQuery = propertyID.Property.AddressText;
 console.log('%c PlaceQuery is: ', "color: brown; font-weight: bold;");
 console.log(placeQuery);
 
+// If API calls are enabled, then make the calls
+if (gphotos_enabled) {
+	// Starts routine to get Google Photos
+	try {
+		//get latitude and longitude of address
+		let latlngData = await googleApiGetLatLng(placeQuery);
 
-// Starts routine to get Google Photos
- try {
-	//get latitude and longitude of address
-	let latlngData = await googleApiGetLatLng(placeQuery);
+		//get nearby locations to address
+		let nearbyData = await googleApiGetNearby(latlngData.lat, latlngData.lng);
 
-	//get nearby locations to address
-	let nearbyData = await googleApiGetNearby(latlngData.lat, latlngData.lng);
+		//get photo data of nearby locations
+		let photoData = await googleApiGetPhotos(nearbyData, req.query.limit);
 
-	//get photo data of nearby locations
-	let photoData = await googleApiGetPhotos(nearbyData, req.query.limit);
-
-	//push photo data to response Package
-	responsePackage.push(photoData);
-}
-catch (err) {
-	console.log(err)
+		//push photo data to response Package
+		responsePackage.push(photoData);
+	}
+	catch (err) {
+		console.log(err)
+	}
+} else {
+	responsePackage.push(dummyImageData);
 }
 
 return res.send(responsePackage);

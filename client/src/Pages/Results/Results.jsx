@@ -16,6 +16,7 @@ import Photos from '../../Components/Photos/Photos'
 // Styles import
 import './Results.scss';
 
+
 export default class Results extends Component {
 
   // API calls setup
@@ -29,7 +30,7 @@ export default class Results extends Component {
   }
 
   componentDidMount() {
-    this.apiFetchCall(this.currentAreaID);
+      this.apiFetchCall(this.currentAreaID);
   }
 
   apiFetchCall = (currentAreaID) => {
