@@ -50,7 +50,7 @@ export default class Results extends Component {
   render() {
     document.title = "Results | StompingGround";
 
-    // Returns a blank area until Axios data for the state is loaded
+    // If Axios data for the state is not loaded, return null
     if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
       return (
         <Header />
