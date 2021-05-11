@@ -5,9 +5,15 @@
 .logo {
 
   &__frame {
-    width: 505px;
-    height: 80px;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
+    width: 300px;
+    height: 48px;
+    
+    @include tablet {
+      height: 80px;
+      margin-bottom: 5px;
+      width: 505px;
+    }
 
     &--hidden {
       display: none;

@@ -6,13 +6,25 @@
   background-color: Gainsboro;
   background-image: url('../../Assets/Images/hero_2.jpg');
   background-position: cover;
-  height: 665px;
-
-  @include flex(row nowrap, center, center);	
+  padding-bottom: 20px;
+  padding-top: 20px;
+  // height: 665px;
+  @include responsive-horiz-margins;
+  
+  // Centre block containing all elements
+  @include flex(row nowrap, center, center);
+  
+  @include tablet {
+    height: 665px;
+    padding-bottom: unset;
+  }
 
   &__container {
     @include flex(column nowrap, flex-start, center);
-    width: 767px;
+
+    @include tablet {
+      max-width: 767px;
+    }
   }
 
   &__heading {
@@ -27,28 +39,43 @@
 
   &__sub-heading {
     color: White;
+    display: none;
     margin-bottom: 15px;
     text-align: center;
+
+    @include tablet {
+      display: unset;
+    }    
   }
   
   &__call-to-action {
     color: White;
     margin-bottom: 25px;
-    
   }
 
   &__list {
+    // @include flex(column nowrap, center, flex-start);
+
     @include font($poppins, 1.7rem, 500);
     color: White;
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
     width: 100%;
+    
+    @include tablet {
+      margin-bottom: 30px;
+      // @include flex(row wrap, center, flex-start);
+    }
   }
 
   &__list-item {
-    display: inline;
-    margin-left: 13px;
+    display:block;
+
+    @include tablet {
+      display: inline;
+      margin-left: 13px;
+    }
   }
 
   &__list-item::before {
@@ -58,20 +85,41 @@
     margin-right: 1px;
   }
 
+  // Neignborhood links total container
   &__links-list-container {
-    // @include flex(row nowrap, space-between, flex-start);
+    @include flex(row wrap, center, flex-start);
 
-    display: grid;
     // grid-template-columns: 1fr 1fr 1fr 1fr;
     // grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 12px 12px;
-    grid-template-areas:
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . ."
-    ". . . .";
+    // display: grid;
+    // gap: 12px 6px;
+    // grid-template-areas:
+    // ". ."
+    // ". ."
+    // ". ."
+    // ". ."
+    // ". ."
+    // ". .";
+    
+    @include tablet {
+      display: grid;
+      grid-template-areas:
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . ."
+      ". . . .";
+      gap: 12px 12px;
+    }
+  }
+
+  &__links-list-link-container {
+    margin: 0 12px 12px 0;
+
+    @include tablet {
+      margin: unset;
+    }
   }
 
   // &__links-list {

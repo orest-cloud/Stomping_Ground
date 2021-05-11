@@ -4,11 +4,24 @@
 
 
 .results {
+  @include responsive-horiz-margins;
+  @include responsive-vert-margins;
+  // padding: 40px $desktop-margin 30px;
+  @include flex(column nowrap, flex-start, center);
 
-  padding: 40px $desktop-margin 30px;
+  &__content-container {
+    max-width: $max-container-width;
+    width: 100%;
+    @include flex(column nowrap, flex-start, flex-start);
+  }
 
+  // Contains WALKSCORE and MAP
   &__visuals-container {
-    @include flex(row nowrap, flex-start, flex-start);
     margin-bottom: 30px;
+    @include flex(column nowrap, flex-start, flex-start);
+
+    @include desktop {
+      @include flex(row nowrap, flex-start, flex-start);
+    }
   } 
 }

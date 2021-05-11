@@ -3,8 +3,18 @@
 @import '../../Styles/Variables';
 
 .walkscore {
+  display: none;
   margin-right: 24px;
+  margin-bottom: 24px;
   max-width: 504px;
+
+  @include tablet {
+    display: unset;
+  }
+
+  @include desktop {
+    margin-bottom: unset;
+  }
 }
 
 #ws-walkscore-tile{position:relative;text-align:left}#ws-walkscore-tile *{float:none;}

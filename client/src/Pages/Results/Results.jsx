@@ -64,19 +64,21 @@ export default class Results extends Component {
       <Header />
   
       <main className="results">
-  
-        <PlaceHeading heading={this.state.neighborhoodData.name} subheading={this.state.neighborhoodData.description} hood="" hoodLink="" />
-  
-        <div className="results__visuals-container">
-          <WalkScore address={this.state.neighborhoodData.address} />
-          <Map mode="centre" latitude={this.state.neighborhoodData.latitude}  longitude={this.state.neighborhoodData.longitude} />
+        <div className="results__content-container">
+
+          <PlaceHeading heading={this.state.neighborhoodData.name} subheading={this.state.neighborhoodData.description} hood="" hoodLink="" />
+    
+          <div className="results__visuals-container">
+            <WalkScore address={this.state.neighborhoodData.address} />
+            <Map mode="centre" latitude={this.state.neighborhoodData.latitude}  longitude={this.state.neighborhoodData.longitude} />
+          </div>
+    
+          <ResultsRows data={this.state.propertiesData} />
+
         </div>
-  
-        <ResultsRows data={this.state.propertiesData} />
-  
       </main>
   
-      <Photos mode="row" data={this.state.photosData} />
+      {/* <Photos mode="row" data={this.state.photosData} /> */}
   
       </>
     )

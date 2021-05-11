@@ -6,7 +6,7 @@
   background-color: $bg-fill-1;
   height: 47px;
   @include flex(row nowrap, center, center);
-  @include responsive-margin;
+  @include responsive-horiz-margins;
   
   
   &__content-container {

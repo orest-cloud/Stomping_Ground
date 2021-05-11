@@ -50,8 +50,6 @@ export default class Hero extends Component {
   // onMouseOver={this.heroMouseoverHandler}
 
   render() {
-    console.log('%c State before render:', "color: blue; font-weight: bold;");
-    console.log(this.state);
 
     return (
 

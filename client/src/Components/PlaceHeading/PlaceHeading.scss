@@ -4,6 +4,7 @@
 
 .placeHeading {
   margin-bottom: 20px;
+  width: 100%;
 
   &__heading {
     @include font($heading-font, 4.5rem, 600);

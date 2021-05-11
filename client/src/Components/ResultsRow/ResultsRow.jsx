@@ -32,7 +32,7 @@ export default function ResultsRow(props) {
 
       </div>
 
-        <Link to={link} className="results-row__details-link"><p className="results-row__details">Details</p></Link>
+      <Link to={link} className="results-row__details-link"><p className="results-row__details">Details</p></Link>
 
     </div>
 

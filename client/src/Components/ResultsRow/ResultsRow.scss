@@ -3,17 +3,41 @@
 @import '../../Styles/Variables';
 
 .results-row {
+  
   @extend %light-curved-border;
-  @include flex(row nowrap, space-between, center);
+  @include flex(column nowrap, flex-start, stretch);
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.05);
-  padding: 10px 50px 10px 12px;
+  padding: 10px 10px 10px 12px;
   margin-bottom: 12px;
+  width: 100%;
+  
+  @include tablet {
+    @include flex(row nowrap, space-between, center);
+    padding: 10px 20px 10px 12px;
+  }
+  
+  @include desktop {
+    padding: 10px 50px 10px 12px;
+  }
 
   &__image {
-    max-width: 200px;
+    
+    @include tablet {
+      max-width: 200px;
+    }
     
     &-link {
-      margin-right: 30px;
+      margin-bottom: 6px;
+      
+      @include tablet {
+        margin-bottom: unset;
+        margin-right: 16px;
+
+      }
+
+      @include desktop {
+        margin-right: 30px;
+      }
     }
   } 
 
@@ -44,9 +68,27 @@
   }
 
   &__details {
-    color: $text-2;
     font-weight: 600;
     text-decoration: none;
+    
+    // Mobile "button" version
+    color: White;
+    background-color: $bg-fill-1;
+    display: block;
+    padding: 5px 0;
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    // width: 100%;
+    
+    @include tablet {
+      display: none;
+    }
+    
+    @include desktop {
+      color: $text-2;
+      display: unset;
+    }
 
     &:hover {
       text-decoration: underline;
