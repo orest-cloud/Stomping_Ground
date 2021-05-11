@@ -5,15 +5,26 @@
 .header {
   background-color: $bg-fill-1;
   height: 47px;
-  padding: 0 $desktop-margin;
-  @include flex(row nowrap, flex-end, center);
+  @include flex(row nowrap, center, center);
+  @include responsive-margin;
+  
+  
+  &__content-container {
+    @include flex(row nowrap, center, center);
+    max-width: $max-container-width;
+    width: 100%;
+
+    @include tablet {
+      @include flex(row nowrap, flex-start, center);
+    }
+  }
 
   &__logo-link {
     color: White;
     font-family: $poppins;
     font-weight: 600;
     font-size: 1.7rem;
-    margin-right: auto;
+    // margin-right: auto;
     text-decoration: none;
 
     &-span {
@@ -28,9 +39,9 @@
     font-size: 1.7rem;
     text-decoration: none;
 
-    &--last-item {
-      margin-left: 55px;
-    }
+    // &--last-item {
+    //   margin-left: 55px;
+    // }
 
     &:hover {
       text-decoration: underline;

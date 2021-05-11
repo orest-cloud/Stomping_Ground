@@ -23,7 +23,6 @@
 	align-items: $align-items;
 }
 
-
 //------------------------------
 // Fonts
 //------------------------------
@@ -31,4 +30,22 @@
     font-family: $font-family;
     font-size: $font-size;
     font-weight: $font-weight;
+}
+
+//------------------------------
+// Margins
+//------------------------------
+@mixin responsive-margin {
+    padding-left: $mobile-margin;
+    padding-right: $mobile-margin;
+    
+    @include tablet {
+        padding-left: $tablet-margin;
+        padding-right: $tablet-margin;
+    }
+
+    @include desktop {
+        padding-left: $desktop-margin;
+        padding-right: $desktop-margin;
+    }
 }

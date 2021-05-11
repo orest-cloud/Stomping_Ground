@@ -114,7 +114,7 @@ router
 	responsePackage.push(listings);
 	
 	// Gets address string to pass to Google Photos functions
-	let placeQuery = hoodID.location.address;
+	let placeQuery = hoodID.address;
 	
   // If API calls are enabled, then make the calls
 	if (gphotos_enabled) {

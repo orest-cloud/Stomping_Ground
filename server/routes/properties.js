@@ -114,7 +114,7 @@ responsePackage.push(hoodID);
 responsePackage.push(propertyID);
 
 // Gets address string to pass to Google Photos functions
-let placeQuery = propertyID.Property.AddressText;
+let placeQuery = propertyID.AddressText;
 
 console.log('%c PlaceQuery is: ', "color: brown; font-weight: bold;");
 console.log(placeQuery);

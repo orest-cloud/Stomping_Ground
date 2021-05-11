@@ -8,14 +8,14 @@ import './ResultsRow.scss';
 export default function ResultsRow(props) {
 
   const link = `/details/${props.data.Id}`;
-  const address = props.data.Property.AddressText;
-  const image = props.data.Property.image;
-  const type = props.data.Building.Type;
-  const price = props.data.Property.Price;
-  const bedrooms = props.data.Building.Bedrooms;
-  const bathrooms = props.data.Building.BathroomTotal;
-  const parking = props.data.Property.parking;
-  const totalSize = props.data.Property.SizeTotal;
+  const address = props.data.AddressText;
+  const image = `/assets/images/properties/${props.data.image}`;
+  const type = props.data.Type;
+  const price = props.data.Price;
+  const bedrooms = props.data.Bedrooms;
+  const bathrooms = props.data.Bathrooms;
+  const parking = props.data.Parking;
+  const totalSize = props.data.SizeTotal;
 
   return (
 

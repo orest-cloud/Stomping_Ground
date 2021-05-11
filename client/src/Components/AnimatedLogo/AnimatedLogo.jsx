@@ -7,12 +7,15 @@ export default function AnimatedLogo(props) {
   console.log('%c State in AnimatedLogo.jsx', "color: red; font-weight: bold;");
 	console.log(props);
 
-  var source = null;
-  if (props.mode === "animated") {
-    source = "AnimatedLogo.html";
-  } else {
-    source = "AnimatedLogo_Static.html";
-  }
+  // var source = null;
+  // if (props.mode === "animated") {
+  //   source = "AnimatedLogo.html";
+  // } else {
+  //   source = "AnimatedLogo_Static.html";
+  // }
+  
+  var source = "/AnimatedLogo.html";
+
 
   // var animatedLogoDisplayMode = "logo__frame--hidden";
   // var staticLogoDisplayMode = "logo__frame--visible";

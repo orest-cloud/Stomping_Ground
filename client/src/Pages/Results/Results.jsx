@@ -68,8 +68,8 @@ export default class Results extends Component {
         <PlaceHeading heading={this.state.neighborhoodData.name} subheading={this.state.neighborhoodData.description} hood="" hoodLink="" />
   
         <div className="results__visuals-container">
-          <WalkScore address={this.state.neighborhoodData.location.address} />
-          <Map mode="centre" latitude={this.state.neighborhoodData.location.latitude}  longitude={this.state.neighborhoodData.location.longitude} />
+          <WalkScore address={this.state.neighborhoodData.address} />
+          <Map mode="centre" latitude={this.state.neighborhoodData.latitude}  longitude={this.state.neighborhoodData.longitude} />
         </div>
   
         <ResultsRows data={this.state.propertiesData} />

@@ -39,15 +39,15 @@ export default class Hero extends Component {
     logoMode: "static"
   }
 
-  heroMouseoverHandler = () => {
-    if (this.state.logoAnimationDone === false) {
-      this.setState({
-        logoAnimationDone: true,
-        logoMode: "animated"
-      })
-    }
-
-  }
+  // heroMouseoverHandler = () => {
+  //   if (this.state.logoAnimationDone === false) {
+  //     this.setState({
+  //       logoAnimationDone: true,
+  //       logoMode: "animated"
+  //     })
+  //   }
+  // }
+  // onMouseOver={this.heroMouseoverHandler}
 
   render() {
     console.log('%c State before render:', "color: blue; font-weight: bold;");
@@ -56,7 +56,7 @@ export default class Hero extends Component {
     return (
 
       <section className="hero">
-        <div className="hero__container" onMouseOver={this.heroMouseoverHandler}>
+        <div className="hero__container" >
           <AnimatedLogo mode={this.state.logoMode} />
           <h3 className="hero__sub-heading">Get a feel for the Toronto neighborhood you're thinking of living in.</h3>
 
