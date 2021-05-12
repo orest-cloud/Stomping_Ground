@@ -29,8 +29,16 @@
 // Photos render in row mode
 .photos-row {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px 10px;
+  
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
 }
 
 // Photos render in column mode
