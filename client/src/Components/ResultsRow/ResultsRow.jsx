@@ -26,9 +26,15 @@ export default function ResultsRow(props) {
 
       <div className="results-row__data-container">
         <Link to={link} className="results-row__link"><h4 className="results-row__address">{address}</h4></Link>
-        <p className="results-row__paragraph"><span className="results-row__paragraph-span">Type: {type}</span>Price: {price}</p>
-        <p className="results-row__paragraph"><span className="results-row__paragraph-span">Bedrooms: {bedrooms}</span>Bathrooms: {bathrooms}</p>
-        <p className="results-row__paragraph"><span className="results-row__paragraph-span">Parking: {parking}</span>Total size: {totalSize}</p>
+
+        <div className="results-row__data-container-grid">
+          <p className="results-row__paragraph">Type: {type}</p>
+          <p className="results-row__paragraph">Price: {price}</p>
+          <p className="results-row__paragraph">Bedrooms: {bedrooms}</p>
+          <p className="results-row__paragraph">Bathrooms: {bathrooms}</p>
+          <p className="results-row__paragraph">Parking: {parking}</p>
+          <p className="results-row__paragraph">Total size: {totalSize}</p>
+        </div>
 
       </div>
 

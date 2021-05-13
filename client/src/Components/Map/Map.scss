@@ -5,16 +5,19 @@
 .map {
   
   &__map {
+    height: 95vw;
     max-height: 448px;
+    max-width: 600px;
   }
 
   &__dummy {
     background-color: gainsboro;
-    height: 450px;
+    height: 95vw;
+    max-height: 450px;
     max-width: 600px;
     object-fit: cover;
     opacity: 0.5;
-    width: 100%;
+    // width: 100%;
   }
 
 }

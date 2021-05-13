@@ -41,8 +41,17 @@
     }
   } 
 
+  // Contains address heading link, price, etc.
   &__data-container {
     margin-right: auto;
+
+    // contains only PRICE, BEDROOMS, etc.
+    &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 20px;
+      // grid-template-areas: ". .";
+    }
   }
 
   &__link {
@@ -59,14 +68,15 @@
     margin-bottom: 10px;
   }
 
-  &__paragraph {
-    margin-bottom: 5px;
+  // &__paragraph {
+  //   margin-bottom: 5px;
 
-    &-span {
-      margin-right: 20px;
-    }
-  }
+  //   &-span {
+  //     margin-right: 20px;
+  //   }
+  // }
 
+  // DETAILS button link
   &__details {
     font-weight: 600;
     text-decoration: none;
@@ -86,12 +96,21 @@
     }
     
     @include desktop {
+      // Convert to text link, not button style
+      background-color: unset;
       color: $text-2;
       display: unset;
+      padding: unset;
+      height: unset;
+      margin-top: unset;
     }
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: none;
+
+      @include desktop {
+        text-decoration: underline;
+      }
     }
 
     &-link {
