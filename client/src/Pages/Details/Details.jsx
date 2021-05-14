@@ -63,22 +63,27 @@ export default class Details extends Component {
       <Header />
 
       <main className="details">
+        <div className="details__content-container">
+          <PlaceHeading heading={this.state.propertiesData.AddressText} subheading="In the neighborhood of " hood={this.state.propertiesData.neighborhoodname} hoodLink={this.state.propertiesData.neighborhood} />
 
-        <PlaceHeading heading={this.state.propertiesData.AddressText} subheading="In the neighborhood of " hood={this.state.propertiesData.neighborhoodname} hoodLink={this.state.propertiesData.neighborhood} />
+          <div className="details__property-info-container">
+            <PropertyInfo data={this.state.propertiesData} />
+            <Map mode="pin" query={this.state.propertiesData.AddressText}  />
+          </div>
 
-        <div className="details__property-info-container">
-          <PropertyInfo data={this.state.propertiesData} />
-          <Map mode="pin" query={this.state.propertiesData.AddressText}  />
+          <p className="details__remarks">{this.state.propertiesData.PublicRemarks}</p>
+
+          <div className="details__hr"></div>
+
         </div>
+      </main>
 
-        <div className="details__hr"></div>
-
-        <div className="details__visuals-container">
+      <div className="details__apis">
+        <div className="details__apis-container">
           <WalkScore address={this.state.propertiesData.AddressText} />
           <Photos mode="column" data={this.state.photosData} />
         </div>
-
-      </main>
+      </div>
 
       </>
     )

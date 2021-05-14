@@ -4,21 +4,58 @@
 
 
 .details {
+  @include responsive-horiz-margins;
+  @include responsive-vert-margins;
+  @include flex(column nowrap, flex-start, center);
 
-  padding: 40px $desktop-margin 50px;
+  &__content-container {
+    max-width: $max-container-width;
+    width: 100%;
+    @include flex(column nowrap, flex-start, flex-start);
+  }
 
   &__property-info-container {
-    @include flex(row nowrap, flex-start, flex-start);
-    // margin-bottom: 50px;
+    @include flex(column nowrap, flex-start, flex-start);
+
+    @include desktop {
+      @include flex(row nowrap, flex-start, flex-start);
+      // margin-bottom: 50px;
+      width: 100%;
+    }
+  }
+
+  &__remarks {
+    margin-top: 15px;
     width: 100%;
-  } 
+
+    @include desktop {
+      margin-bottom: 30px;
+    }
+  }
 
   &__hr {
     @extend %hr;
     margin-bottom: 20px;
   }
 
-  &__visuals-container {
-    @include flex(row nowrap, flex-start, flex-start);
+  &__apis {
+    @include flex(column nowrap, flex-start, flex-start);
+
+    @include tablet {
+      padding-left: $tablet-margin;
+      padding-right: $tablet-margin;
+    }
+
+    @include desktop {
+      padding-left: $desktop-margin;
+      padding-right: $desktop-margin;
+    }
+
+    &-container {
+      max-width: $max-container-width;
+      // width: 100%;
+      background-color: darkmagenta;
+      @include flex(row nowrap, flex-start, flex-start);
+    }
   }
 }

@@ -28,11 +28,13 @@ export default function ResultsRow(props) {
         <Link to={link} className="results-row__link"><h4 className="results-row__address">{address}</h4></Link>
 
         <div className="results-row__data-container-grid">
-          <p className="results-row__paragraph">Type: {type}</p>
+          <p className="results-row__paragraph results-row__paragraph--column-1">Type: {type}</p>
           <p className="results-row__paragraph">Price: {price}</p>
-          <p className="results-row__paragraph">Bedrooms: {bedrooms}</p>
+
+          <p className="results-row__paragraph results-row__paragraph--column-1">Bedrooms: {bedrooms}</p>
           <p className="results-row__paragraph">Bathrooms: {bathrooms}</p>
-          <p className="results-row__paragraph">Parking: {parking}</p>
+          
+          <p className="results-row__paragraph results-row__paragraph--column-1">Parking: {parking}</p>
           <p className="results-row__paragraph">Total size: {totalSize}</p>
         </div>
 

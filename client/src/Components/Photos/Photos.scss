@@ -4,7 +4,16 @@
 
 .photos {
   background-color: $bg-fill-2;
-  
+  @include flex(column nowrap, flex-start, center);
+  padding-left: $mobile-margin;
+  padding-right: $mobile-margin;
+  @include responsive-vert-margins;
+
+  &__content-container {
+    max-width: $max-container-width;
+    width: 100%;
+  }
+
   &__heading {
     color: White;
     margin-bottom: 15px;
@@ -14,16 +23,7 @@
     color: $grey-1;
     margin-bottom: 25px;
   }
-
-  &--row-mode {
-    padding: 40px $desktop-margin 120px;
-  }
-
-  &--column-mode {
-    padding: 17px 22px 20px;
-  }
 }
-
 
 
 // Photos render in row mode
@@ -37,14 +37,13 @@
   }
   
   @include desktop {
+    gap: 15px 15px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
 
 // Photos render in column mode
 .photos-column {
-  // width: px;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 10px;

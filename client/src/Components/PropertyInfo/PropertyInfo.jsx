@@ -51,10 +51,6 @@ export default function PropertyInfo(props) {
           <p className="property-info__data">{parking}</p>
         </div>
       </div>
-
-      <div className="property-info__data-container">
-        <p className="property-info__remarks">{remarks}</p>
-      </div>
       
     </section>
 

@@ -43,14 +43,22 @@
 
   // Contains address heading link, price, etc.
   &__data-container {
-    margin-right: auto;
-
+    @include tablet {
+      margin-right: auto;
+    }
+    
     // contains only PRICE, BEDROOMS, etc.
     &-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 10px 20px;
-      // grid-template-areas: ". .";
+      gap: 5px 20px;
+      grid-template-areas: ". .";
+      margin-bottom: 5px;
+      
+      @include tablet {
+        gap: 10px 20px;
+        margin-bottom: unset;
+      }
     }
   }
 
@@ -68,13 +76,13 @@
     margin-bottom: 10px;
   }
 
-  // &__paragraph {
-  //   margin-bottom: 5px;
-
-  //   &-span {
-  //     margin-right: 20px;
-  //   }
-  // }
+  &__paragraph {
+    &--column-1 {
+      @include desktop {
+        min-width: 225px;
+      }
+    }
+  }
 
   // DETAILS button link
   &__details {

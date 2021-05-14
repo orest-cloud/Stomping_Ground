@@ -7,18 +7,27 @@ import './Photos.scss';
 
 export default function Photos(props) {
 
-  const photosData = props.data;
+  var photosData = props.data;
   
   // Declaration of variables
   let blockMode = null;
   let dataToRender = null;  
   let photosRender = null;
 
+  //API calls on or off config
+  const {gphotos_enabled} = require('../../api-config');
+
   // If component mode is 'row' then it displays a full-width photo view
   // If 'column', then a small row of 4 photos on the side
   if (props.mode === "row") {
     // Sets a class to "row mode"
     blockMode = "photos--row-mode";
+
+    // If API calls not enabled, use dummy images
+    if (!gphotos_enabled) {
+    } else {
+      photosData = require('../../data/dummy-image-data.json');
+    }
 
     // Slices the array to 15 entries or less
     dataToRender = photosData.slice(0, 15);
@@ -48,12 +57,13 @@ export default function Photos(props) {
   return (
 
     <section className={`photos ${blockMode}`}>
+      <div className="photos__content-container">
+        <h2 className="photos__heading">Photos of the neighborhood</h2>
+        <p className="photos__sub-heading">Provided by Google Maps Places</p>
 
-      <h2 className="photos__heading">Photos of the neighborhood</h2>
-      <p className="photos__sub-heading">Provided by Google Maps Places</p>
-
-      {photosRender}
-
+        {photosRender}
+        
+      </div>
     </section>
   )
 }

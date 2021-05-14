@@ -5,7 +5,11 @@
 .property-info {
   @include flex(column nowrap, flex-start, flex-start);
   margin-right: 67px;
-  width: 450px;
+  width: 100%;
+
+  @include desktop {
+    width: 450px;
+  }
   
   &__image {
     margin-bottom: 15px;
@@ -29,7 +33,4 @@
     margin-bottom: 10px;
   }
 
-  &__remarks {
-    width: 100%;
-  }
 }

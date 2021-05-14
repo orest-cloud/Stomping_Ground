@@ -78,7 +78,7 @@ export default class Results extends Component {
         </div>
       </main>
   
-      {/* <Photos mode="row" data={this.state.photosData} /> */}
+      <Photos mode="row" data={this.state.photosData} />
   
       </>
     )
