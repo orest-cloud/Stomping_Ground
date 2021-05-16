@@ -18,13 +18,11 @@
 
   &__image {
     display: none;
-    // margin-bottom: 16px;
     max-width: 300px;
     margin-right: 22px;
     
     @include desktop {
       display: unset;
-      // margin-bottom: unset;
     }
   }
 
