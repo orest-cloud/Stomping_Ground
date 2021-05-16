@@ -27,10 +27,7 @@
   &__remarks {
     margin-top: 15px;
     width: 100%;
-
-    @include desktop {
-      margin-bottom: 30px;
-    }
+    max-width: 1080px;
   }
 
   &__hr {
@@ -39,11 +36,11 @@
   }
 
   &__apis {
-    @include flex(column nowrap, flex-start, flex-start);
+    @include flex(column nowrap, flex-start, center);
 
     @include tablet {
-      padding-left: $tablet-margin;
-      padding-right: $tablet-margin;
+      // padding-left: $tablet-margin;
+      // padding-right: $tablet-margin;
     }
 
     @include desktop {
@@ -53,8 +50,23 @@
 
     &-container {
       max-width: $max-container-width;
-      background-color: darkmagenta;
-      @include flex(row nowrap, flex-start, flex-start);
+      width: 100%;
+      @include flex(column nowrap, flex-start, flex-start);
+      
+      @include desktop {
+        @include flex(row nowrap, flex-start, flex-start);
+      }
+    }
+
+    &-walkscore-container {
+      @include tablet {
+        padding-left: $tablet-margin;
+      }
+      
+      @include desktop {
+        padding-right: 30px;
+        padding-left: unset;
+      }
     }
   }
 }

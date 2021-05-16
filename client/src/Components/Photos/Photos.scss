@@ -7,7 +7,28 @@
   @include flex(column nowrap, flex-start, center);
   padding-left: $mobile-margin;
   padding-right: $mobile-margin;
+  // @include responsive-horiz-margins;
   @include responsive-vert-margins;
+
+  @include tablet {
+    padding-left: $tablet-margin;
+    padding-right: $tablet-margin;
+  }
+  
+  // Different padding, depending on row or column mode
+  &--row-mode {
+    @include desktop {
+      padding-left: $desktop-margin;
+      padding-right: $desktop-margin;
+    }
+  }
+
+  &--column-mode {
+    @include desktop {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+  }
 
   &__content-container {
     max-width: $max-container-width;
@@ -47,4 +68,14 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px 10px;
+  // width: 100%;
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr;
+    // width: unset;
+  }
 }

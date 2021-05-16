@@ -80,7 +80,9 @@ export default class Details extends Component {
 
       <div className="details__apis">
         <div className="details__apis-container">
-          <WalkScore address={this.state.propertiesData.AddressText} />
+          <div className="details__apis-walkscore-container">
+            <WalkScore address={this.state.propertiesData.AddressText} />
+          </div>
           <Photos mode="column" data={this.state.photosData} />
         </div>
       </div>

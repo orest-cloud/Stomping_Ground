@@ -116,7 +116,7 @@ responsePackage.push(propertyID);
 // Gets address string to pass to Google Photos functions
 let placeQuery = propertyID.AddressText;
 
-console.log('%c PlaceQuery is: ', "color: brown; font-weight: bold;");
+console.log('%c PlaceQuery in properties route is: ', "color: brown; font-weight: bold;");
 console.log(placeQuery);
 
 // If API calls are enabled, then make the calls

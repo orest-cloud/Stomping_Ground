@@ -3,11 +3,15 @@ import { Link } from 'react-router-dom';
 
 import './Header.scss';
 
+import headerLogo from '../../Assets/Logos/sg-logo-header.svg';
+
 export default function Header() {
   return (
     <nav className="header">
       <div className="header__content-container">
-        <Link to="/" className="header__logo-link">Stomping<span className="header__logo-link-span">Ground</span></Link>
+        <Link to="/" className="header__logo-link">
+          Stomping<span className="header__logo-link-span">Ground</span>
+        </Link>
       </div>
     </nav>
   )

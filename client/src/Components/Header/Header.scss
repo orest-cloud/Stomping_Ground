@@ -8,7 +8,6 @@
   @include flex(row nowrap, center, center);
   @include responsive-horiz-margins;
   
-  
   &__content-container {
     @include flex(row nowrap, center, center);
     max-width: $max-container-width;
@@ -26,11 +25,16 @@
     font-size: 1.7rem;
     // margin-right: auto;
     text-decoration: none;
+    line-height: 0;
 
     &-span {
       color: $dark-green;
     }
   }
+
+  // &__logo-image {
+  //   max-width: 180px;
+  // }
 
   &__link {
     color: White;
