@@ -18,6 +18,7 @@
   // Contains WALKSCORE and MAP
   &__visuals-container {
     margin-bottom: 30px;
+    width: 100%;
     @include flex(column nowrap, flex-start, flex-start);
 
     @include desktop {

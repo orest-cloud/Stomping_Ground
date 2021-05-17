@@ -1,0 +1,23 @@
+@import '../../Styles/Mixins';
+@import '../../Styles/Partials';
+@import '../../Styles/Variables';
+
+.screen-loader {
+  @include flex(column nowrap, center, center);
+  width: 100%;
+  height: 80vh;
+
+  // Loading animation "footsteps"
+  &__loader {
+    opacity: 0.2;
+    max-width: 50px;
+  
+  }
+
+  &__text {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: $grey-2;
+  }
+
+}

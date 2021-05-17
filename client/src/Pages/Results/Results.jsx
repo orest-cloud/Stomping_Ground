@@ -8,6 +8,7 @@ import PlaceHeading from '../../Components/PlaceHeading/PlaceHeading'
 import WalkScore from '../../Components/WalkScore/WalkScore'
 import Map from '../../Components/Map/Map'
 import ResultsRows from '../../Components/ResultsRows/ResultsRows'
+import ScreenLoader from '../../Components/ScreenLoader/ScreenLoader'
 import Photos from '../../Components/Photos/Photos'
 
 // Images import
@@ -52,12 +53,21 @@ export default class Results extends Component {
 
     // If Axios data for the state is not loaded, return null
     if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
+
       return (
+        <>
         <Header />
+        <main className="results">
+          <div className="results__content-container">
+            <ScreenLoader />
+          </div>
+        </main>
+        </>
         )
       } else {
       document.title = `${this.state.neighborhoodData.name} | StompingGround`;
     }
+
 
     return (
       <>

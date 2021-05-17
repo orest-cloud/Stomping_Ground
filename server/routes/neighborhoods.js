@@ -116,8 +116,8 @@ router
 	// Gets address string to pass to Google Photos functions
 	let placeQuery = hoodID.address;
 	
-  console.log('%c PlaceQuery in neighborhoods route is: ', "color: green; font-weight: bold;");
-  console.log(placeQuery);
+  console.log('%c  PlaceQuery in neighborhoods route is: ', "color: green; font-weight: bold;");
+  console.log(`  ${placeQuery}`);
 
   // If API calls are enabled, then make the calls
 	if (gphotos_enabled) {

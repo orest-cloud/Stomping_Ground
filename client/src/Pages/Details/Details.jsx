@@ -9,6 +9,7 @@ import WalkScore from '../../Components/WalkScore/WalkScore'
 import Map from '../../Components/Map/Map'
 import Photos from '../../Components/Photos/Photos'
 import PropertyInfo from '../../Components/PropertyInfo/PropertyInfo'
+import ScreenLoader from '../../Components/ScreenLoader/ScreenLoader'
 
 // Images import
 // import mapImage from '../../Assets/Images/sample_1.jpg'
@@ -54,7 +55,14 @@ export default class Details extends Component {
     // Returns a blank area until Axios data for the state is loaded
     if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
       return (
+        <>
         <Header />
+        <main className="details">
+          <div className="details__content-container">
+            <ScreenLoader />
+          </div>
+        </main>
+        </>
       )
     }    
 

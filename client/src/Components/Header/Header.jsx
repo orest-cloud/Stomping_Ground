@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 
 import './Header.scss';
 
-import headerLogo from '../../Assets/Logos/sg-logo-header.svg';
-
 export default function Header() {
   return (
     <nav className="header">

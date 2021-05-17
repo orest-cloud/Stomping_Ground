@@ -2,7 +2,9 @@ import React from 'react';
 
 import './Map.scss';
 
-import gmaps_dummy from '../../Assets/Images/gmaps-dummy.png';
+// import gmaps_dummy from '../../Assets/Images/gmaps-dummy.png';
+import loader from '../../Assets/Images/sg-loader.gif';
+// import loader from '../../Assets/Images/gif-test.gif';
 
 export default function Map(props) {
   // API key import
@@ -13,7 +15,11 @@ export default function Map(props) {
   // If API calls disabled, show a dummy placeholder
   if (gmaps_enabled === false) {
     return (
-      <img src={gmaps_dummy} className="map__dummy" alt="Placeholder" />
+      
+      <div className="map__dummy">
+        <img src={loader} className="map__loader" alt="Loading content" />
+      </div>
+      
     )
   }
 
@@ -39,11 +45,6 @@ export default function Map(props) {
   }
 
   return (
-
-    // Old dummy image
-    // <div className="map">
-    //   <img src={map} alt="Google Map" className="map__map"/>
-    // </div>
 
 <iframe title="uniqueTitle" width="600" height="450" frameBorder="0" src={mapSource} allowFullScreen></iframe>
 
