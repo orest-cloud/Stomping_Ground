@@ -9,6 +9,7 @@
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "createjs": "^1.0.1",
+    "dotenv": "^9.0.2",
     "node-sass": "^4.14.1",
     "react": "^17.0.1",
     "react-adobe-animate": "^2.5.0",

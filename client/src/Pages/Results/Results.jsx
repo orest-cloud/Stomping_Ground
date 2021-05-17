@@ -17,11 +17,20 @@ import Photos from '../../Components/Photos/Photos'
 // Styles import
 import './Results.scss';
 
+// Set up server endpoint
+var apiURL;
+// If in development mode, use localhost endpoint
+if (process.env.NODE_ENV === 'development') {
+  apiURL = `${process.env.REACT_APP_HOST_URL_LOCAL}place/`;
+} else {
+  apiURL = `${process.env.REACT_APP_HOST_URL}place/`;
+}
+
 
 export default class Results extends Component {
 
-  // API calls setup
-  apiURL = 'http://localhost:8080/place/';
+
+  // apiURL = 'http://localhost:8080/place/';
   currentAreaID = this.props.match.params.id;
 
   state = {
@@ -42,7 +51,7 @@ export default class Results extends Component {
 	  console.log(`apiFetchcall intiated with id ${currentAreaID}`);
     
     Axios
-        .get(`${this.apiURL}${currentAreaID}`, { params: { limit: 15 }})
+        .get(`${apiURL}${currentAreaID}`, { params: { limit: 15 }})
         .then((res) => {
 
             this.setState({
@@ -55,7 +64,7 @@ export default class Results extends Component {
   }      
 
   render() {
-    document.title = "Results | StompingGround";
+    document.title = `Results | ${process.env.REACT_APP_SITE_NAME}`;
 
     // If Axios data for the state is not loaded, return null
     if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
@@ -71,7 +80,9 @@ export default class Results extends Component {
         </>
         )
       } else {
-      document.title = `${this.state.neighborhoodData.name} | StompingGround`;
+      
+      // Set page title with neighborhood name
+      document.title = `${this.state.neighborhoodData.name} | ${process.env.REACT_APP_SITE_NAME}`;
     }
 
 
@@ -86,7 +97,7 @@ export default class Results extends Component {
     
           <div className="results__visuals-container">
             <WalkScore address={this.state.neighborhoodData.address} />
-            <Map mode="centre" latitude={this.state.neighborhoodData.latitude}  longitude={this.state.neighborhoodData.longitude} />
+            <Map mode="pin" query={this.state.neighborhoodData.queryname} />
           </div>
     
           <ResultsRows data={this.state.propertiesData} />

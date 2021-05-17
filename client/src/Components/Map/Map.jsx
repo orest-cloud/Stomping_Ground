@@ -3,7 +3,6 @@ import React from 'react';
 import './Map.scss';
 
 // import gmaps_dummy from '../../Assets/Images/gmaps-dummy.png';
-import loader from '../../Assets/Images/sg-loader.gif';
 // import loader from '../../Assets/Images/gif-test.gif';
 
 export default function Map(props) {
@@ -16,9 +15,7 @@ export default function Map(props) {
   if (gmaps_enabled === false) {
     return (
       
-      <div className="map__dummy">
-        <img src={loader} className="map__loader" alt="Loading content" />
-      </div>
+      <div className="map__dummy" />
       
     )
   }
@@ -46,7 +43,7 @@ export default function Map(props) {
 
   return (
 
-<iframe title="uniqueTitle" width="600" height="450" frameBorder="0" src={mapSource} allowFullScreen></iframe>
+<iframe className="map__dummy" title="uniqueTitle" width="600" height="450" frameBorder="0" src={mapSource} allowFullScreen></iframe>
 
   )
 }

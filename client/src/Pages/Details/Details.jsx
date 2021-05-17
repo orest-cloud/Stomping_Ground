@@ -17,11 +17,18 @@ import ScreenLoader from '../../Components/ScreenLoader/ScreenLoader'
 // Styles import
 import './Details.scss';
 
+// Set up server endpoint
+var apiURL;
+// If in development mode, use localhost endpoint
+if (process.env.NODE_ENV === 'development') {
+  apiURL = `${process.env.REACT_APP_HOST_URL_LOCAL}property/`;
+} else {
+  apiURL = `${process.env.REACT_APP_HOST_URL}property/`;
+}
+
 
 export default class Details extends Component {
 
-  // API calls setup
-  apiURL = 'http://localhost:8080/property/';
   currentID = this.props.match.params.id;
 
   state = {
@@ -36,7 +43,7 @@ export default class Details extends Component {
 
   apiFetchCall = (currentID) => {
     Axios
-        .get(`${this.apiURL}${currentID}`, { params: { name: this.state.address, limit: 15 }})
+        .get(`${apiURL}${currentID}`, { params: { limit: 15 }})
         .then((res) => {
 
             this.setState({
@@ -50,7 +57,7 @@ export default class Details extends Component {
 
 
   render() {
-    document.title = "Details | StompingGround";
+    document.title = `Details | ${process.env.REACT_APP_SITE_NAME}`;
 
     // Returns a blank area until Axios data for the state is loaded
     if ((!this.state.neighborhoodData) || (!this.state.propertiesData) || (!this.state.photosData)) {
@@ -64,9 +71,13 @@ export default class Details extends Component {
         </main>
         </>
       )
-    }    
+    } else {
+      document.title = `${this.state.propertiesData.AddressText} | ${process.env.REACT_APP_SITE_NAME}`;
+    }
 
     return (
+      
+
       <>
       <Header />
 

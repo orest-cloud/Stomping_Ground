@@ -16,7 +16,7 @@ import sample4 from '../../Assets/Images/sample_4.jpg'
 import './Home.scss';
 
 export default function Home() {
-  document.title = "StompingGround | Properties with liveability data";
+  document.title = `${process.env.REACT_APP_SITE_NAME} | Toronto real estate with liveability data`;
 
   return (
     <>

@@ -2,6 +2,7 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
+
 // Pages import
 import Home from './Pages/Home/Home.jsx';
 import Results from './Pages/Results/Results.jsx';
@@ -9,6 +10,9 @@ import Details from './Pages/Details/Details.jsx';
 
 //SCSS
 import './Styles/global.scss';
+
+// Environment variables
+require('dotenv').config();
 
 export default function App() {
   return (

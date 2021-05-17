@@ -17,6 +17,15 @@ export default function Photos(props) {
   //API calls on or off config
   const {gphotos_enabled} = require('../../api-config');
 
+  // Text 'Provided by' indicates to developer whether what is being displayed are placeholder images
+  var providedBySource;
+  if (gphotos_enabled) {
+    providedBySource = 'Google Maps Places';
+  } else {
+    providedBySource = 'Placeholder Images';
+  }
+
+
   // If component mode is 'row' then it displays a full-width photo view
   // If 'column', then a small row of 4 photos on the side
   if (props.mode === "row") {
@@ -42,6 +51,12 @@ export default function Photos(props) {
   } else {
     // Sets a class to "column mode"
     blockMode = "photos--column-mode";
+
+    // If API calls not enabled, use dummy images
+    if (!gphotos_enabled) {
+      photosData = require('../../data/dummy-image-data.json');
+    }
+
     // Slices the array to 5 entries or less
     dataToRender = photosData.slice(0, 8);
 
@@ -58,7 +73,7 @@ export default function Photos(props) {
     <section className={`photos ${blockMode}`}>
       <div className="photos__content-container">
         <h2 className="photos__heading">Photos of the neighborhood</h2>
-        <p className="photos__sub-heading">Provided by Google Maps Places</p>
+        <p className="photos__sub-heading">Provided by {providedBySource}</p>
 
         {photosRender}
         

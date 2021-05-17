@@ -5,8 +5,19 @@
 
 .details {
   @include responsive-horiz-margins;
-  @include responsive-vert-margins;
   @include flex(column nowrap, flex-start, center);
+
+  padding-top: 20px;
+  padding-bottom: 0;
+  
+  @include tablet {
+      padding-top: 30px;
+      padding-bottom: 10px;
+  }
+
+  @include desktop {
+      padding-top: 35px;
+  }  
 
   &__content-container {
     max-width: $max-container-width;
