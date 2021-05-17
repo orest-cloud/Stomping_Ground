@@ -57,7 +57,9 @@ async function googleApiGetNearby(lat, lng) {
 
 //get image data by photo reference Id
 async function googleApiGetPhotos(photoRefList, limit) {
-    try {
+
+  
+  try {
       let iLimit = Number.parseInt(limit);
 
       let requestList = [];
@@ -102,7 +104,10 @@ router
 // Gets info on a neighborhood, and listings in that neighborhood
 router
 .get('/:id', async function(req, res) {
-	// Package to return
+
+  console.log(`Neighborhoods route intiated with req ${req.params.id}`);
+
+	// Package to returnreq
 	responsePackage = [];
 	
 	// Gets neighborhood info
@@ -114,13 +119,16 @@ router
 	responsePackage.push(listings);
 	
 	// Gets address string to pass to Google Photos functions
-	let placeQuery = hoodID.address;
+	let placeQuery = `${hoodID.address}, ${hoodID.city}, Ontario, ${hoodID.postalcode}`;
 	
   console.log('%c  PlaceQuery in neighborhoods route is: ', "color: green; font-weight: bold;");
   console.log(`  ${placeQuery}`);
 
   // If API calls are enabled, then make the calls
 	if (gphotos_enabled) {
+    console.log(`APIkey being used is ${apikey}`);
+    console.log(`Gphotos asyncs initiated because gphotos_enabled is ${gphotos_enabled}`);
+
     // Starts routine to get Google Photos
      try {
       //get latitude and longitude of address

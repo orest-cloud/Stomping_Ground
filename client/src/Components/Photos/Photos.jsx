@@ -25,7 +25,6 @@ export default function Photos(props) {
 
     // If API calls not enabled, use dummy images
     if (!gphotos_enabled) {
-    } else {
       photosData = require('../../data/dummy-image-data.json');
     }
 

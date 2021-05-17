@@ -31,12 +31,18 @@ export default class Results extends Component {
   }
 
   componentDidMount() {
+    console.log('%c ', "color: yellow; font-weight: bold;");
+	  console.log('Results.jsx componentDidMount');
+
       this.apiFetchCall(this.currentAreaID);
   }
 
   apiFetchCall = (currentAreaID) => {
+    console.log('%c ', "color: green; font-weight: bold;");
+	  console.log(`apiFetchcall intiated with id ${currentAreaID}`);
+    
     Axios
-        .get(`${this.apiURL}${currentAreaID}`, { params: { name: this.state.address, limit: 15 }})
+        .get(`${this.apiURL}${currentAreaID}`, { params: { limit: 15 }})
         .then((res) => {
 
             this.setState({
