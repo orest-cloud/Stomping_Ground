@@ -1,4 +1,5 @@
 {
+  "proxy": "https://cryptic-dawn-87615.herokuapp.com:8080",
   "name": "stomping_ground",
   "version": "0.1.0",
   "private": true,

@@ -1,10 +1,12 @@
 // initialize Express in project
 const express = require('express');
 const app = express();
+// const logger = require("./middleware/logger");
 const cors = require('cors');
 
 app.use(cors());
 app.use(express.json());
+// app.use(logger);
 
 const neighborhoodsRoute = require('./routes/neighborhoods');
 const propertiesRoute = require('./routes/properties');

@@ -1,0 +1,24 @@
+{
+  "proxy": "https://cryptic-dawn-87615.herokuapp.com:8080",
+  "name": "stomping-ground",
+  "version": "1.0.0",
+  "description": "package.json file for heroku deployment",
+  "main": "server.js",
+  "scripts": {
+    "client": "npm start --prefix client",
+    "start": "npm start --prefix server",
+    "server": "nodemon server --prefix server",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm install --prefix server && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orest-cloud/Stomping_Ground.git"
+  },
+  "author": "Orest Szopiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orest-cloud/Stomping_Ground/issues"
+  },
+  "homepage": "https://github.com/orest-cloud/Stomping_Ground#readme"
+}
