@@ -12,7 +12,6 @@
 .env.test
 
 # production
-config.js
 **/build
 .env
 

@@ -6,7 +6,7 @@ const neighborhoods = require('../data/neighborhoods.json');
 const properties = require('../data/properties.json');
 
 // API key import
-const {apikey} = require('../config');
+const apikey = process.env.API_KEY;
 
 //API calls on or off config
 const {gphotos_enabled} = require('../api-config');
