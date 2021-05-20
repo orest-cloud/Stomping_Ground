@@ -7,7 +7,7 @@ import './Map.scss';
 
 export default function Map(props) {
   // API key import
-	const {apikey} = require('../../config');
+	const apikey = process.env.REACT_APP_API_KEY;
   // API calls on or off config
 	const {gmaps_enabled} = require('../../api-config');
 

@@ -30,7 +30,6 @@
 
     @include desktop {
       @include flex(row nowrap, flex-start, flex-start);
-      // margin-bottom: 50px;
       width: 100%;
     }
   }
@@ -48,11 +47,6 @@
 
   &__apis {
     @include flex(column nowrap, flex-start, center);
-
-    @include tablet {
-      // padding-left: $tablet-margin;
-      // padding-right: $tablet-margin;
-    }
 
     @include desktop {
       padding-left: $desktop-margin;

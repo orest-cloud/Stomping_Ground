@@ -15,7 +15,6 @@ export default function PropertyInfo(props) {
   const totalSize = props.data.SizeTotal;
   const contact = props.data.Contact_Name;
   const phone = props.data.Contact_PhoneNumber;
-  const remarks = props.data.PublicRemarks;
 
   return (
 
