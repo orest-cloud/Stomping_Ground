@@ -23,7 +23,6 @@
     font-family: $poppins;
     font-weight: 600;
     font-size: 1.7rem;
-    // margin-right: auto;
     text-decoration: none;
     line-height: 0;
 
@@ -32,20 +31,12 @@
     }
   }
 
-  // &__logo-image {
-  //   max-width: 180px;
-  // }
-
   &__link {
     color: White;
     font-family: $mukta;
     font-weight: 400;
     font-size: 1.7rem;
     text-decoration: none;
-
-    // &--last-item {
-    //   margin-left: 55px;
-    // }
 
     &:hover {
       text-decoration: underline;
