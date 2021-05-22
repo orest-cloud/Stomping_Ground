@@ -7,6 +7,7 @@
   @include flex(column nowrap, flex-start, center);
   padding: 40px $desktop-margin 30px;
 
+  // Sign In icon
   &__icon {
     margin-bottom: 10px;
     width: 50px
