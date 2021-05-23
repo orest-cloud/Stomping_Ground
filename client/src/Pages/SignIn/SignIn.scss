@@ -2,7 +2,7 @@
 @import '../../Styles/Partials';
 @import '../../Styles/Variables';
 
-
+// Sign in styling
 .signin {
   @include flex(column nowrap, flex-start, center);
   padding: 40px $desktop-margin 30px;
