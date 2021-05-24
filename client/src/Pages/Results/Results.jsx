@@ -23,7 +23,7 @@ var apiURL;
 if (process.env.NODE_ENV === 'development') {
   apiURL = `${process.env.REACT_APP_HOST_URL_LOCAL}place/`;
 } else {
-  apiURL = `${process.env.REACT_APP_HEROKU_URL}:${process.env.PORT}/place/`;
+  apiURL = `${process.env.REACT_APP_HEROKU_URL}/place/`;
 }
 
 console.log('%c Results.jsx apiURL is ', "color: purple; font-weight: bold;");
@@ -48,9 +48,9 @@ export default class Results extends Component {
   }
 
   apiFetchCall = (currentAreaID) => {
-    console.log('%c ', "color: green; font-weight: bold;");
+    console.log('%c In apiFetchCall', "color: green; font-weight: bold;");
 	  console.log(`apiFetchcall intiated with id ${currentAreaID}`);
-	  console.log(`${apiURL}${currentAreaID}`);
+	  console.log(`Full Axios target is ${apiURL}${currentAreaID}`);
     
     Axios
         .get(`${apiURL}${currentAreaID}`, { params: { limit: 15 }})
