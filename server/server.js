@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 // const logger = require("./middleware/logger");
 const cors = require('cors');
+const path = require('path');
 
 app.use(cors());
 app.use(express.json());
@@ -14,16 +15,18 @@ const propertiesRoute = require('./routes/properties');
 // Environment variables
 require('dotenv').config();
 let devModeMessage = '';
-var serverHost = '';
 
 // Use localhost if in development mode:
 // > NODE_ENV=development npm start
-if (process.env.NODE_ENV == 'development') {
-    serverHost = process.env.DEV_HOST;
-    devModeMessage = ' in development mode.';
+if (process.env.NODE_ENV == 'production') {
+    devModeMessage = ' in production mode.';
 } else {
-    serverHost = process.env.HOST;
+    devModeMessage = ' in development mode.';
 }
+
+// Set the port and host URL
+const port = process.env.PORT || 8080;
+const serverHost = process.env.HOST || '/';
 
 //------------------------------
 // Endpoint routes
@@ -33,8 +36,18 @@ if (process.env.NODE_ENV == 'development') {
 app.use('/place', neighborhoodsRoute);
 app.use('/property', propertiesRoute);
 
+// If in production mode on Heroku, server the static files
+if (process.env.NODE_ENV === "production") {
+    // Set static folder
+    app.use(express.static("../client/build"));
+
+    app.get("*", (_req, res) => {
+        res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
+    });
+}
+
 // start Express on port 8080
 app.listen(8080, () => {
-    console.log(`SG server started on ${serverHost}:${process.env.PORT}${devModeMessage}`);
+    console.log(`SG server started on ${serverHost}:${port}${devModeMessage}`);
     console.log('Press CTRL + C to stop server');
     });
