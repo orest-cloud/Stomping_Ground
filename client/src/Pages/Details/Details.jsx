@@ -23,7 +23,7 @@ var apiURL;
 if (process.env.NODE_ENV === 'development') {
   apiURL = `${process.env.REACT_APP_HOST_URL_LOCAL}property/`;
 } else {
-  apiURL = `${process.env.REACT_APP_HOST_URL}property/`;
+  apiURL = `${process.env.REACT_APP_HEROKU_URL}/property/`;
 }
 
 
