@@ -23,8 +23,11 @@ var apiURL;
 if (process.env.NODE_ENV === 'development') {
   apiURL = `${process.env.REACT_APP_HOST_URL_LOCAL}place/`;
 } else {
-  apiURL = `${process.env.REACT_APP_HOST_URL}place/`;
+  apiURL = `${process.env.REACT_APP_HEROKU_URL}:${process.env.PORT}/place/`;
 }
+
+console.log('%c Results.jsx apiURL is ', "color: purple; font-weight: bold;");
+	console.log(apiURL);
 
 
 export default class Results extends Component {
@@ -40,8 +43,6 @@ export default class Results extends Component {
   }
 
   componentDidMount() {
-    console.log('%c ', "color: yellow; font-weight: bold;");
-	  console.log('Results.jsx componentDidMount');
 
       this.apiFetchCall(this.currentAreaID);
   }
@@ -49,6 +50,7 @@ export default class Results extends Component {
   apiFetchCall = (currentAreaID) => {
     console.log('%c ', "color: green; font-weight: bold;");
 	  console.log(`apiFetchcall intiated with id ${currentAreaID}`);
+	  console.log(`${apiURL}${currentAreaID}`);
     
     Axios
         .get(`${apiURL}${currentAreaID}`, { params: { limit: 15 }})
