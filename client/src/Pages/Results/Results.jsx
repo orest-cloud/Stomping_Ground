@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'development') {
 export default class Results extends Component {
 
 
-  // apiURL = 'http://localhost:8080/place/';
+  // apiURL = 'http://localhost:5000/place/';
   currentAreaID = this.props.match.params.id;
 
   state = {

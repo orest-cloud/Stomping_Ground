@@ -1,5 +1,5 @@
 {
-  "proxy": "https://cryptic-dawn-87615.herokuapp.com:8080",
+  "proxy": "https://cryptic-dawn-87615.herokuapp.com:5000",
   "name": "stomping-ground",
   "version": "1.0.0",
   "description": "package.json file for heroku deployment",

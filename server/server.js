@@ -25,7 +25,8 @@ if (process.env.NODE_ENV == 'production') {
 }
 
 // Set the port and host URL
-const port = process.env.PORT || 8080;
+// const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5000;
 const serverHost = process.env.HOST || '/';
 
 //------------------------------
@@ -46,8 +47,8 @@ if (process.env.NODE_ENV === "production") {
     });
 }
 
-// start Express on port 8080
-app.listen(8080, () => {
+// start Express on port 5000
+app.listen(port, () => {
     console.log(`SG server started on ${serverHost}:${port}${devModeMessage}`);
     console.log('Press CTRL + C to stop server');
     });
