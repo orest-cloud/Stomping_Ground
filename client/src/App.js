@@ -9,7 +9,7 @@ import Results from './Pages/Results/Results.jsx';
 import Details from './Pages/Details/Details.jsx';
 
 //SCSS
-import './Styles/global.scss';
+import './Styles/Global.scss';
 
 // Environment variables
 require('dotenv').config();
