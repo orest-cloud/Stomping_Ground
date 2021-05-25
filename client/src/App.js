@@ -5,8 +5,11 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // Pages import
 import Home from './Pages/Home/Home.jsx';
-import Results from './Pages/Results/Results.jsx';
 import Details from './Pages/Details/Details.jsx';
+import Results from './Pages/Results/Results.jsx';
+
+// Components import
+import ScrollToTop from './Components/ScrollToTop/ScrollToTop.jsx';
 
 //SCSS
 import './Styles/Global.scss';
@@ -18,6 +21,7 @@ export default function App() {
   return (
     
     <BrowserRouter>
+      <ScrollToTop />
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/results/:id" exact component={Results} />

@@ -45,33 +45,4 @@
     margin-bottom: 20px;
   }
 
-  &__apis {
-    @include flex(column nowrap, flex-start, center);
-
-    @include desktop {
-      padding-left: $desktop-margin;
-      padding-right: $desktop-margin;
-    }
-
-    &-container {
-      max-width: $max-container-width;
-      width: 100%;
-      @include flex(column nowrap, flex-start, flex-start);
-      
-      @include desktop {
-        @include flex(row nowrap, flex-start, flex-start);
-      }
-    }
-
-    &-walkscore-container {
-      @include tablet {
-        padding-left: $tablet-margin;
-      }
-      
-      @include desktop {
-        padding-right: 30px;
-        padding-left: unset;
-      }
-    }
-  }
 }

@@ -5,7 +5,7 @@ import Axios from 'axios';
 // Components import
 import Header from '../../Components/Header/Header'
 import PlaceHeading from '../../Components/PlaceHeading/PlaceHeading'
-import WalkScore from '../../Components/WalkScore/WalkScore'
+// import WalkScore from '../../Components/WalkScore/WalkScore'  Walkscore is temporarily disabled
 import Map from '../../Components/Map/Map'
 import Photos from '../../Components/Photos/Photos'
 import PropertyInfo from '../../Components/PropertyInfo/PropertyInfo'
@@ -97,14 +97,7 @@ export default class Details extends Component {
         </div>
       </main>
 
-      <div className="details__apis">
-        <div className="details__apis-container">
-          <div className="details__apis-walkscore-container">
-            <WalkScore address={this.state.propertiesData.AddressText} />
-          </div>
-          <Photos mode="column" data={this.state.photosData} />
-        </div>
-      </div>
+      <Photos mode="row" data={this.state.photosData} />
 
       </>
     )

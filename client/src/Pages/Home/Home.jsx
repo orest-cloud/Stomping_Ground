@@ -29,7 +29,7 @@ export default function Home() {
 
         <div className="info__column">
           <h2 className="info__heading">What is this?</h2>
-          <p className="info__paragraph">"Stomping Ground is the place to come when you’re looking for a place in Toronto to call home. Immerse yourself in the city’s residential neighborhoods without the drive or the airfare.</p>
+          <p className="info__paragraph">Stomping Ground is the place to come when you’re looking for a place in Toronto to call home. Immerse yourself in the city’s residential neighborhoods without the drive or the airfare.</p>
           <p className="info__paragraph">It’s a one-stop shop: choose a listing, check out its WalkScore&reg; details, and take a virtual stroll through the area by browsing real, unretouched photos uploaded by users like you.</p>
         </div>
 

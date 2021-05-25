@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const axios = require('axios');
+// Environment variables
+require('dotenv').config();
 
 const neighborhoods = require('../data/neighborhoods.json');
 const properties = require('../data/properties.json');

@@ -27,7 +27,6 @@
   }
 
   &__column {
-    // width: 100%;
 
     @include tablet {
       width: 300px;
@@ -41,7 +40,6 @@
 
   &__heading {
     margin-bottom: 10px;
-    // margin-top: 8px;
     
     @include tablet {
       margin-bottom: 20px;
@@ -50,6 +48,10 @@
 
     &--space-above {
       margin-top: 8px;
+
+      @include tablet {
+        margin-top: unset;
+      }
     }
   }
 
